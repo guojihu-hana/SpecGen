@@ -1,0 +1,1 @@
+Write a correct implementation that is faster than the reference and than any kernel shown above. Output exactly one ```python fence containing the complete module, and nothing else.

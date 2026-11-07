@@ -1,0 +1,1 @@
+Rewrite the reference model below with custom CUDA kernels so that it produces the same outputs, faster.

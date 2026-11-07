@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.hypothesis/
+pyrightconfig.json
+
+# run outputs and local scratch
+runs/
+runs_no_reasoning/
+spec_act_runs/
+logs/
+temp/
+tmp_test/
+tmp_tests/
+data/
+figs/
+plot/
+*.csv
+gemm_temp_monitor.py
+get_time_analysis.py

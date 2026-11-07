@@ -1,0 +1,129 @@
+# Triggers for speculative generation (first draft).
+#
+# Patterns are Python regular expressions matched against the main model's
+# reasoning stream; keywords are English only and matched case-insensitively
+# unless case_sensitive is true.
+#
+# A match arms a trigger; the reasoning prefix is cut after_tokens later (the
+# group's value, else default_after_tokens) and handed to k speculative
+# generations.  While a trigger is armed further matches are ignored; triggers
+# are at least min_gap_tokens apart and at most max_triggers_per_iteration per
+# iteration; fallback_tokens of reasoning without a trigger fires one anyway.
+# The command line flags --trigger-after-tokens / --fallback-trigger-tokens
+# override the token values.
+
+case_sensitive: false
+default_after_tokens: 500
+fallback_tokens: 2000
+min_gap_tokens: 500
+max_triggers_per_iteration: 20
+
+groups:
+  # Where data lives and how it moves.
+  - name: memory_hierarchy
+    patterns:
+      - '__shared__'
+      - '\bshared[ -]memory\b'
+      - '\bsmem\b'
+      - '\bbank[ -]conflicts?\b'
+      - '\bcoalesc(?:e|ed|es|ing)\b'
+      - '\b(?:L1|L2)[ -]cache\b'
+      - '\bregister[ -](?:pressure|spills?|spilling|blocking|tiling|file)\b'
+      - '\bvectori[sz]ed (?:loads?|stores?|access(?:es)?|memory)\b'
+      - '\b(?:float4|half2|int4|__half2|__nv_bfloat162)\b'
+      - '\bmemory[ -]bound\b'
+      - '\b(?:memory )?bandwidth[ -]bound\b'
+
+  # Asynchronous copies and Hopper / Blackwell data movement.
+  - name: async_copy
+    patterns:
+      - '\bcp\.async\b'
+      - '\bTMA\b'
+      - '\btensor memory accelerator\b'
+      - '\bldmatrix\b'
+      - '\bmemcpy_async\b'
+      - '\bmbarrier\b'
+      - '\bcluster(?:s)? of (?:thread )?blocks\b'
+      - '\bdistributed shared memory\b'
+
+  # How work is partitioned.
+  - name: tiling
+    patterns:
+      - '\btile[ _-]?sizes?\b'
+      - '\btiling\b'
+      - '\b(?:BLOCK|TILE)_(?:M|N|K|SIZE|DIM|ROWS|COLS)\b'
+      - '\b(?:thread[ -]?block|warp|cta) tiles?\b'
+      - '\b(?:block|grid)[ -](?:size|dim(?:ension)?s?)\b'
+      - '\bthreads per block\b'
+      - '\b(?:elements|items|rows) per thread\b'
+      - '\bgrid[ -]stride loop\b'
+
+  # Warp-level cooperation.
+  - name: warp_level
+    patterns:
+      - '\bwarp[ -](?:level|shuffles?|reduce|reductions?|specializ\w*|primitives?)\b'
+      - '__shfl\w*'
+      - '\bwarp divergence\b'
+      - '\b__syncwarp\b'
+      - '\bcooperative groups\b'
+
+  # Matrix units and precision.
+  - name: tensor_core
+    patterns:
+      - '\btensor[ -]cores?\b'
+      - '\bwmma\b'
+      - '\bmma\.sync\b'
+      - '\bwgmma\b'
+      - '\btcgen05\b'
+      - '\bHMMA\b'
+      - '\b(?:tf32|bf16|fp16|fp8)\b accumulat\w*'
+      - '\bmixed[ -]precision\b'
+
+  # Overlapping memory and compute.
+  - name: pipelining
+    patterns:
+      - '\bdouble[ -]buffer(?:ing|ed|s)?\b'
+      - '\bsoftware[ -]pipelin(?:e|ed|ing)\b'
+      - '\bmulti[ -]stage\b'
+      - '\bprefetch(?:ing|ed)?\b'
+      - '\blatency hiding\b'
+
+  # Launch configuration and resource limits.
+  - name: occupancy
+    patterns:
+      - '\boccupancy\b'
+      - '__launch_bounds__'
+      - '\blaunch bounds\b'
+      - '\bregisters per thread\b'
+      - '\bwaves? (?:per|across) (?:the )?SMs?\b'
+      - '\bSM count\b'
+
+  # Combining operations into fewer kernels.
+  - name: fusion
+    patterns:
+      - '\bfus(?:e|ed|es|ing|ion)\b'
+      - '\bepilogue\b'
+      - '\bsingle (?:fused )?kernel\b'
+      - '\bavoid(?:ing)? (?:an? )?(?:extra|intermediate|separate) (?:kernel|pass|write)s?\b'
+
+  # Reduction, normalization and scan algorithms.
+  - name: algorithm
+    patterns:
+      - '\b(?:parallel|tree|block|two[ -]pass|single[ -]pass)[ -]reductions?\b'
+      - '\batomicAdd\b'
+      - '\batomics?\b'
+      - '\bonline softmax\b'
+      - '\bwelford\b'
+      - '\b(?:parallel )?prefix[ -]sums?\b'
+      - '\bparallel scan\b'
+      - '\bnumerically stable\b'
+
+  # The model starts writing code in its reasoning: cut sooner.
+  - name: code_start
+    after_tokens: 300
+    patterns:
+      - '__global__'
+      - '```(?:cuda|cpp|c\+\+|python)'
+      - '\bload_inline\b'
+      - '\blet me (?:now )?(?:write|code|implement|draft)\b'
+      - '\b(?:final|full|complete) (?:code|implementation|kernel|module)\b'

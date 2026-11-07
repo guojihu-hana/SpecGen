@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root {
+  --bg: #0f1115; --panel: #171a21; --panel2: #1e222b; --text: #e6e8eb; --muted: #98a2b3; --grid: #2a2f3a;
+  --main: #4c8bf5; --spec: #36b37e; --build: #8993a4; --validate: #4c9aff; --benchmark: #ffab00; --ncu: #a77bff;
+  --bad: #ff5630; --cancel: #5e6c84; --accent: #ffd166; --ok: #57d9a3;
+  --run-a: #ff5c5c; --run-b: #4c9aff; --bar-h: 48px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 13px/1.5 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+header { padding: 18px 24px 8px; }
+h1 { margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+h2 { font-size: 16px; margin: 0 0 10px; font-weight: 600; }
+h3 { font-size: 14px; margin: 0 0 8px; font-weight: 600; color: var(--muted); }
+.panel { background: var(--panel); border: 1px solid #232733; border-radius: 10px; margin: 12px 24px; padding: 14px 16px; }
+.grid2 { display: grid; grid-template-columns: 3fr 2fr; gap: 0; }
+.grid2 > .panel { margin-right: 0; }
+.grid2 > .panel + .panel { margin-left: 12px; margin-right: 24px; }
+#meta { color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+#meta b { color: var(--text); font-weight: 500; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 10px; background: var(--panel2); color: var(--muted); font-size: 12px; }
+.chip.success { background: rgba(87,217,163,.15); color: var(--ok); }
+.chip.bad { background: rgba(255,86,48,.15); color: #ff8f73; }
+.chip.cancel { background: rgba(94,108,132,.25); color: #b3bac5; }
+.chip.spec { background: rgba(54,179,126,.18); color: #79e2b4; }
+.chip.main { background: rgba(76,139,245,.18); color: #8fb6ff; }
+#player { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; position: sticky; top: var(--bar-h); z-index: 5; }
+#player button { background: var(--main); color: white; border: 0; border-radius: 6px; padding: 6px 14px; font-size: 13px; cursor: pointer; }
+#player button.secondary { background: var(--panel2); color: var(--text); }
+#player select { background: var(--panel2); color: var(--text); border: 1px solid #2c3240; border-radius: 6px; padding: 4px; }
+#scrub { flex: 1; min-width: 200px; accent-color: var(--accent); }
+#clock { font-variant-numeric: tabular-nums; min-width: 120px; text-align: right; color: var(--accent); }
+#stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.stat { background: var(--panel2); border-radius: 8px; padding: 8px 12px; }
+.stat .v { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.stat .k { color: var(--muted); font-size: 12px; }
+#timeline-wrap, #compare-timeline-wrap, #speedup-wrap, #compare-wrap { position: relative; overflow-x: auto; }
+.cmp-note { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+svg text { fill: var(--text); font-size: 11px; }
+svg .label { fill: var(--muted); }
+svg .group { font-weight: 600; fill: var(--text); font-size: 12px; }
+#tooltip { position: fixed; pointer-events: none; background: #0b0d12; border: 1px solid #343a48; border-radius: 8px;
+  padding: 8px 10px; font-size: 12px; max-width: 420px; display: none; z-index: 10; box-shadow: 0 6px 18px rgba(0,0,0,.5); }
+#tooltip .t { font-weight: 600; margin-bottom: 4px; }
+#tooltip td { padding: 0 8px 0 0; vertical-align: top; }
+#tooltip td:first-child { color: var(--muted); white-space: nowrap; }
+#excerpt { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px;
+  background: var(--panel2); border-radius: 8px; padding: 10px 12px; min-height: 160px; max-height: 300px; overflow: auto; }
+#excerpt-head { margin-bottom: 6px; }
+mark { background: var(--accent); color: #111; border-radius: 3px; padding: 0 2px; }
+#feed { list-style: none; margin: 0; padding: 0; max-height: 330px; overflow: auto; font-size: 12px; }
+#feed li { padding: 3px 0; border-bottom: 1px solid #222632; }
+#feed .ts { color: var(--accent); font-variant-numeric: tabular-nums; display: inline-block; min-width: 56px; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+th, td { text-align: center; padding: 4px 8px; border-bottom: 1px solid #232733; white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; position: sticky; top: 0; background: var(--panel); }
+td.num { font-variant-numeric: tabular-nums; }
+td.mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; white-space: nowrap; }
+.scroll { max-height: 420px; overflow: auto; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.legend i { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.page { padding-bottom: 0; }
+.page h1 { font-size: 22px; }
+.page a { color: var(--accent); text-decoration: none; }
+/* several runs: the comparison card on top (the intro), then this card with one section per run */
+.traces-head { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+.traces-head h2 { margin: 0; }
+.traces .tools { display: flex; gap: 8px; }
+.traces .tools button { background: var(--panel2); color: var(--text); border: 1px solid #2c3240; border-radius: 6px;
+  padding: 4px 12px; font-size: 12px; cursor: pointer; }
+.traces .task-body .panel { margin: 12px 0; background: #13161c; border-color: #262b36; }
+.traces .task-body .grid2 > .panel + .panel { margin-left: 12px; margin-right: 0; }
+.traces .task-body > header { padding: 10px 2px 4px; }
+.traces .task-bar { padding: 0 12px; }
+/* one run: no card around it */
+.traces.single { background: none; border: 0; border-radius: 0; margin: 0; padding: 0; }
+.traces.single .traces-head { display: none; }
+.traces.single .task-body .panel { margin: 12px 24px; background: var(--panel); border-color: #232733; }
+.traces.single .task-body .grid2 > .panel + .panel { margin-left: 12px; margin-right: 24px; }
+.traces.single .task-body > header { padding: 18px 24px 8px; }
+.traces.single .task-bar { padding: 0 24px; }
+/* each run is a bar that collapses and expands its section; the bar of the section in view stays on top */
+.task-bar { position: sticky; top: 0; z-index: 8; height: var(--bar-h); display: flex; align-items: center; gap: 12px;
+  padding: 0 24px; background: #12151c; border-top: 1px solid #2c3240; border-bottom: 1px solid #2c3240;
+  cursor: pointer; user-select: none; }
+.task-bar h1 { margin: 0; font-size: 18px; white-space: nowrap; }
+.task-bar .chev { color: var(--muted); display: inline-block; width: 14px; transition: transform .15s; }
+.task-bar .task-sum { color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.task-block.collapsed .task-body { display: none; }
+.task-block.collapsed .chev { transform: rotate(-90deg); }
+.task-note { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.defs { color: var(--muted); font-size: 12px; margin: 8px 0 0; padding-left: 18px; }
+.defs li { margin: 3px 0; }
+/* formulas: italic variables, subscripts, stacked fractions */
+.math { font-family: "Cambria Math", "Times New Roman", "STIX Two Math", serif; font-size: 1.08em; white-space: nowrap; }
+.math i { font-style: italic; }
+.frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 2px; line-height: 1.15; }
+.frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 3px 1px; }
+.frac > span:last-child { padding: 1px 3px 0; }
+__EXTRA_STYLE__
+</style>
+</head>
+<body>
+<header class="page" id="page" hidden>
+  <h1>__TITLE__</h1>
+  <div id="intro">__INTRO__</div>
+</header>
+<section class="panel traces" id="traces">
+  <div class="traces-head">
+    <h2>Detailed traces</h2>
+    <div class="tools"><button id="expand-all">Expand all</button><button id="collapse-all">Collapse all</button></div>
+  </div>
+  <main id="sections"></main>
+</section>
+<template id="task-template">
+<article class="task-block">
+<div class="task-bar" title="Click to collapse / expand"><span class="chev">▾</span><h1 class="task-title"></h1><span class="task-sum"></span></div>
+<div class="task-body">
+<header>
+  <div id="meta"></div>
+  <div class="task-note" hidden></div>
+</header>
+<section class="panel" id="player">
+  <button id="play">▶ Replay</button>
+  <button id="reset" class="secondary">⟲ Restart</button>
+  <select id="speed" title="Replay speed">
+    <option value="2">2×</option><option value="5">5×</option><option value="10" selected>10×</option>
+    <option value="30">30×</option><option value="100">100×</option>
+  </select>
+  <input type="range" id="scrub" min="0" max="1000" value="1000">
+  <span id="clock"></span>
+  <label style="color:var(--muted)"><input type="checkbox" id="follow" checked> Follow the latest trigger</label>
+</section>
+<section class="panel"><div id="stats"></div></section>
+<section class="panel" id="timeline-wrap">
+  <h2 id="timeline-title">Execution timeline</h2>
+  <div class="legend">
+    <span><i style="background:var(--main)"></i>main generation (reasoning)</span>
+    <span><i style="background:var(--accent)"></i>trigger (▲ size = k)</span>
+    <span><i style="background:var(--spec)"></i>spec generation</span>
+    <span><i style="background:var(--build)"></i>CPU build</span>
+    <span><i style="background:var(--validate)"></i>validation</span>
+    <span><i style="background:var(--benchmark)"></i>benchmark</span>
+    <span><i style="background:var(--ncu)"></i>ncu</span>
+    <span><i style="background:var(--ncu);opacity:.45"></i>main row: the next prompt waits for ncu</span>
+    <span><i style="background:var(--bad)"></i>failed / termination line (● ncu alert)</span>
+    <span><i style="background:var(--cancel)"></i>cancelled</span>
+    <span><i style="background:transparent;outline:2px solid var(--bad);outline-offset:-2px"></i>red outline: job killed at its time limit</span>
+  </div>
+  <svg id="timeline"></svg>
+</section>
+<section class="panel" id="compare-timeline-wrap" hidden>
+  <h2 id="compare-timeline-title"></h2>
+  <div class="legend">
+    <span><i style="background:var(--main)"></i>main generation (one kernel per iteration)</span>
+    <span><i style="background:var(--build)"></i>CPU build</span>
+    <span><i style="background:var(--validate)"></i>validation</span>
+    <span><i style="background:var(--benchmark)"></i>benchmark</span>
+    <span><i style="background:var(--ncu)"></i>ncu</span>
+    <span><i style="background:var(--ncu);opacity:.45"></i>main row: the next prompt waits for ncu</span>
+    <span><i style="background:var(--bad)"></i>failed / termination line</span>
+    <span><i style="background:transparent;outline:2px solid var(--bad);outline-offset:-2px"></i>red outline: job killed at its time limit</span>
+  </div>
+  <svg id="compare-timeline"></svg>
+  <p class="cmp-note">The same time axis as the timeline above (the longer of the two runs); the whole run shows when the replay ends.</p>
+</section>
+<section class="grid2">
+  <div class="panel"><h3>Reasoning at the trigger</h3><div id="excerpt-head"></div><div id="excerpt">When the replay reaches the first trigger, the end of the reasoning prefix handed to spec generation shows here, with the keyword highlighted. Click a ▲ on the timeline to show any trigger.</div></div>
+  <div class="panel"><h3>Events</h3><ol id="feed"></ol></div>
+</section>
+<section class="panel" id="speedup-wrap">
+  <h2>Speedup over time</h2>
+  <div class="legend" id="speedup-legend"></div>
+  <svg id="speedup"></svg>
+</section>
+<section class="panel" id="compare-wrap" hidden>
+  <h2 id="compare-title"></h2>
+  <div class="legend" id="compare-legend"></div>
+  <svg id="compare"></svg>
+  <div id="compare-table"></div>
+</section>
+<section class="panel" id="criteria-wrap">
+  <h2>SpecGen under each termination criterion: time, tokens and GPU utilization</h2>
+  <div class="scroll" id="criteria"></div>
+</section>
+<section class="panel"><h2>Iterations</h2><div class="scroll" id="iterations"></div></section>
+<section class="panel"><h2>Kernels</h2><div class="scroll" id="kernels"></div></section>
+</div>
+</article>
+</template>
+<div id="tooltip"></div>
+<script id="run-data" type="application/json">__DATA__</script>
+<script>
+"use strict";
+const PAGE = JSON.parse(document.getElementById("run-data").textContent);
+const NS = "http://www.w3.org/2000/svg";
+const COLORS = { main: "var(--main)", spec: "var(--spec)", build: "var(--build)", validate: "var(--validate)",
+  benchmark: "var(--benchmark)", ncu: "var(--ncu)", bad: "var(--bad)", cancel: "var(--cancel)", accent: "var(--accent)" };
+const RUN_COLORS = ["var(--run-a)", "var(--run-b)"];  // the run (SpecGen, red), the compared run (Baseline, blue)
+const PALETTE = ["#4cc9f0", "#c792ea", "#9be564", "#f78fb3", "#2ec4b6", "#ffab76"];  // tasks of a run with several
+const STOP_RING = "#ffffff";  // a kernel that met the termination criterion
+const shortTask = t => t.split("/").pop();
+const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v)) ? "-" : Number(v).toFixed(d);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const frac = (top, bottom) => `<span class="frac"><span>${top}</span><span>${bottom}</span></span>`;
+// relative to the compared run (the Baseline): time and tokens as a share of its whole run, speedups as a multiple
+const pctOf = (v, base, label) => v === null || v === undefined || !base ? "" : ` (${(v / base * 100).toFixed(2)}% of ${label})`;
+const timesOf = (v, base, label) => !v || !base ? "" : ` (${(v / base).toFixed(2)}x of ${label})`;
+const BAD = new Set(["compile_error", "runtime_error", "cuda_error", "numerical_error", "timeout", "parse_error",
+  "llm_error", "benchmark_error", "internal_error", "worker_error", "cuda_unavailable", "forbidden", "excluded"]);
+function statusChip(status) {
+  const cls = status === "success" ? "success" : BAD.has(status) ? "bad" : (status === "cancelled" || status === "grace_truncated" || status === "duplicate") ? "cancel" : "";
+  return `<span class="chip ${cls}">${esc(status ?? "-")}</span>`;
+}
+function el(tag, attrs = {}, parent = null) {
+  const node = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+  if (parent) parent.appendChild(node);
+  return node;
+}
+const tickFor = span => [5, 10, 15, 30, 60, 120, 300, 600, 900, 1800].find(s => span / s <= 14) || 3600;
+const timeLabel = t => t >= 60 ? `${Math.floor(t / 60)}:${String(Math.round(t % 60)).padStart(2, "0")}` : `${t}s`;
+function packLanes(items, maxLanes) {
+  const ends = [];
+  for (const it of items.sort((a, b) => a.start - b.start)) {
+    let lane = ends.findIndex(e => e <= it.start + 0.01);
+    if (lane < 0) { lane = ends.length < maxLanes ? ends.length : ends.indexOf(Math.min(...ends)); }
+    ends[lane] = Math.max(ends[lane] ?? 0, it.end);
+    it.lane = lane;
+  }
+  return Math.max(1, ends.length);
+}
+
+// ---- tooltip ------------------------------------------------------------
+const tip = document.getElementById("tooltip");
+function attachTip(node, info) {
+  node.addEventListener("mousemove", ev => {
+    tip.innerHTML = `<div class="t">${esc(info.title)}</div><table>${info.rows.map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join("")}</table>`;
+    tip.style.display = "block";
+    const w = tip.offsetWidth;
+    tip.style.left = Math.min(ev.clientX + 14, window.innerWidth - w - 10) + "px";
+    tip.style.top = (ev.clientY + 14) + "px";
+  });
+  node.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+}
+
+// one section of the page: a run D (with D.compare, the run it is compared with); `root` holds its panels
+function renderTask(root, D) {
+const $ = id => root.querySelector("#" + id);
+root.querySelector(".task-title").textContent = D.title;
+if (D.note) { const note = root.querySelector(".task-note"); note.innerHTML = D.note; note.hidden = false; }
+if (D.compare && D.compare.rows.length) {  // what the bar shows while the section is collapsed
+  const [la, lb] = D.compare.labels, r = D.compare.rows[0];
+  const best = v => v ? fmt(v, 2) + "×" : "-";
+  root.querySelector(".task-sum").textContent = `${la} ${best(r.a.best)}${timesOf(r.a.best, r.b.best, lb)} · ${lb} ${best(r.b.best)}`;
+}
+
+// ---- header -------------------------------------------------------------
+(function renderMeta() {
+  const r = D.run, term = r.termination || {};
+  const items = [
+    ["Model", `${r.model} (${r.endpoint})`], ["GPU", r.gpu_type], ["Allocation", r.allocation],
+    ["Spec prompt", r.spec_prompt_mode ?? "off"],
+    ["Early termination", term.enabled ? `${term.criteria} (margin ${term.margin})` : "off"],
+    ["Grace", term.grace_ratio ?? "-"], ["Duration", fmt(D.duration, 0) + " s"], ["Tasks", D.tasks.map(shortTask).join(", ")],
+  ];
+  $("meta").innerHTML = items.map(([k, v]) => `<span>${k} <b>${esc(v)}</b></span>`).join("");
+})();
+
+// ---- timeline layout ----------------------------------------------------
+const LEFT = 190, ROW = 15, GAP = 4, RIGHT = 24;
+const width = Math.max(1100, $("timeline-wrap").clientWidth - 40);
+const SPAN = Math.max(D.duration, D.compare ? D.compare.duration : 0, 1);  // both runs of a comparison on one time axis
+const x = t => LEFT + (Math.max(0, t) / SPAN) * (width - LEFT - RIGHT);
+const TICK = tickFor(SPAN);
+// one run's timeline: R is the page data, or D.compare.timeline for the compared run
+function drawTimeline(R, svg) {
+  const animated = [];  // {start, end, node, x0, kind}
+  const rowsOf = {};
+  const kernelInfo = (task, kernel) => R.kernels[task + "|" + kernel] || null;
+  function axis(top, bottom) {
+    for (let t = 0; t <= SPAN + 1e-6; t += TICK) {
+      el("line", { x1: x(t), x2: x(t), y1: top, y2: bottom, stroke: "#232733" }, svg);
+      el("text", { x: x(t), y: top - 4, "text-anchor": "middle", class: "label" }, svg).textContent = timeLabel(t);
+    }
+  }
+  function bar(row, start, end, color, info, opts = {}) {
+    const h = opts.h ?? ROW - 3;
+    const rect = el("rect", { x: x(start), y: row + (opts.dy ?? 0), width: Math.max(1.5, x(end) - x(start)), height: h,
+      rx: 2, fill: color, opacity: opts.opacity ?? 0.9 }, svg);
+    rect.setAttribute("stroke-width", "1.5");
+    if (info) attachTip(rect, info);
+    animated.push({ start, end, node: rect, kind: "bar", stroke: opts.stroke || null });  // outline shows once it ends
+    return rect;
+  }
+  function mark(node, t) { animated.push({ start: t, end: t, node, kind: "mark" }); return node; }
+  function rowLabel(text, row, cls = "label") {
+    const t = el("text", { x: 12, y: row + ROW - 4, class: cls }, svg);
+    t.textContent = text;
+  }
+
+  const top0 = 30;
+  let y = top0;
+  for (const task of R.tasks) {
+    const spans = R.spans.filter(s => s.task === task);
+    const mains = R.mains.filter(m => m.task === task);
+    const specs = R.specs.filter(s => s.task === task);
+    const triggers = R.triggers.filter(t => t.task === task);
+    const specLanes = specs.length ? packLanes(specs, 8) : 0;  // no spec row for a run without spec generation
+    const groupTop = y;
+    rowLabel(shortTask(task), y, "group");
+    y += ROW + 2;
+    const mainRow = y + 8; // room for trigger marks above
+    const specTop = mainRow + ROW + GAP;
+    const groupBottom = specTop + specLanes * (ROW - 4) + GAP;
+    // iteration bands
+    for (const s of spans) {
+      const band = el("rect", { x: x(s.start), y: groupTop, width: Math.max(1, x(s.end) - x(s.start)), height: groupBottom - groupTop,
+        fill: s.iteration % 2 ? "#1b1f28" : "#191c24" }, svg);
+      svg.insertBefore(band, svg.firstChild);
+      attachTip(band, { title: `${shortTask(task)} · iter ${s.iteration}`, rows: [["end reason", s.end_reason ?? "running"],
+        ["duration", fmt(s.end - s.start) + " s"], ["selected", s.selected ?? "-"]] });
+      const room = x(s.end) - x(s.start) - 6;  // short iterations get the number only, or no label
+      const lbl = el("text", { x: x(s.start) + 4, y: groupTop + 11, class: "label" }, svg);
+      lbl.textContent = `iter ${s.iteration} · ${s.end_reason ?? "running"}`;
+      if (lbl.getComputedTextLength() > room) lbl.textContent = `${s.iteration}`;
+      if (lbl.getComputedTextLength() > room) lbl.remove(); else mark(lbl, s.start);
+      if (s.termination) {
+        const tx = x(s.termination.t);
+        const line = el("line", { x1: tx, x2: tx, y1: groupTop, y2: groupBottom, stroke: COLORS.bad, "stroke-width": 2, "stroke-dasharray": "4 3" }, svg);
+        attachTip(line, { title: `Early termination (${s.termination.criterion})`, rows: [["kernel", s.termination.kernel],
+          ["speedup", fmt(s.termination.speedup, 3) + "×"], ["baseline", fmt(s.termination.baseline, 3)], ["time", fmt(s.termination.t) + " s"]] });
+        mark(line, s.termination.t);
+      }
+    }
+    for (const r of R.resumes || []) {  // a resumed run continues here; the idle time before is left out
+      const line = el("line", { x1: x(r.t), x2: x(r.t), y1: groupTop, y2: groupBottom, stroke: COLORS.accent,
+        "stroke-width": 2, "stroke-dasharray": "2 3" }, svg);
+      attachTip(line, { title: "Resumed", rows: [["resumed at", fmt(r.t) + " s"],
+        ["stopped for", `${(r.gap_s / 3600).toFixed(1)} h (left out of the timeline)`]] });
+      mark(line, r.t);
+    }
+    for (const w of (R.ncu_waits || []).filter(w => w.task === task)) {  // the next prompt waits for ncu
+      bar(mainRow, w.start, w.end, COLORS.ncu, { title: `Waiting for ncu · before iter ${w.iteration}`, rows: [
+        ["duration", fmt(w.end - w.start) + " s"], ["finished", w.finished ?? "-"], ["unfinished", w.unfinished ?? "-"]] },
+        { opacity: 0.45, stroke: w.unfinished ? COLORS.bad : null });
+    }
+    for (const a of (R.alerts || []).filter(a => a.task === task)) {
+      const m = el("circle", { cx: x(a.t), cy: mainRow + 6, r: 5, fill: COLORS.bad, stroke: "#111" }, svg);
+      attachTip(m, { title: `ncu alert: ${a.kind}`, rows: [["iteration", a.iteration ?? "-"], ["kernel", a.kernel ?? "-"],
+        ["seconds", fmt(a.ncu_s ?? a.seconds)]] });
+      mark(m, a.t);
+    }
+    rowLabel(triggers.length ? "main · ▲ triggers" : "main", mainRow);
+    for (const m of mains) {
+      const info = { title: `Main generation · iter ${m.iteration}`, rows: [["status", m.aborted ? "aborted by early termination" : (m.ok ? "finished" : "failed")],
+        ["reasoning tokens", m.reasoning_tokens ?? (m.progress.at(-1) || [0, 0])[1]], ["duration", fmt(m.end - m.start) + " s"]] };
+      bar(mainRow, m.start, m.end, COLORS.main, info, { opacity: m.aborted ? 0.55 : 0.9, stroke: m.aborted ? COLORS.bad : null });
+    }
+    for (const t of triggers) {
+      const size = 3 + Math.min(6, t.k || 0);
+      const cx = x(t.t), cy = mainRow - 2;
+      const tri = el("path", { d: `M${cx},${cy} l${-size},${-size - 2} l${2 * size},0 z`, fill: t.k ? COLORS.accent : "#5b6170", cursor: "pointer" }, svg);
+      attachTip(tri, { title: `Trigger #${t.index} · ${t.reason}`, rows: [["keyword", t.keyword || "(fallback)"], ["reasoning tokens", t.fired_tokens],
+        ["k", t.k], ["budget", t.budget && t.budget.policy === "adaptive" ? `capacity ${fmt(t.budget.capacity_per_s, 3)}/s · horizon ${fmt(t.budget.horizon_s)} s · in pipeline ${fmt(t.budget.in_pipeline, 1)} · raw k ${fmt(t.budget.raw_k, 2)}` : (t.budget && t.budget.policy) || "-"]] });
+      tri.addEventListener("click", () => { $("follow").checked = false; showExcerpt(t); });
+      mark(tri, t.t);
+    }
+    if (specs.length) rowLabel(`spec generations (${specs.length})`, specTop);
+    for (const s of specs) {
+      const k = kernelInfo(task, s.kernel);
+      const status = k ? k.status : (s.cancelled ? "cancelled" : "?");
+      const color = s.cancelled ? COLORS.cancel : (s.has_code === false ? COLORS.bad : COLORS.spec);
+      bar(specTop + s.lane * (ROW - 4), s.start, s.end, color, { title: s.kernel, rows: [["trigger", `#${s.trigger}`],
+        ["generation", fmt(s.end - s.start) + " s"], ["status", status], ["speedup", k && k.speedup ? fmt(k.speedup, 3) + "×" : "-"]] },
+        { h: ROW - 6, opacity: 0.85 });
+    }
+    y = groupBottom + 10;
+  }
+
+  // resource rows: the run's slots (as many as the run it is compared with, when given), else the slots it used
+  const slots = R.slots && R.slots.length ? R.slots : [...new Set(R.jobs.map(j => j.slot))].sort((a, b) => {
+    const order = r => ["builder", "validator", "shared", "profiler"].indexOf(r.split(":")[0]);
+    return order(a) - order(b) || a.localeCompare(b, undefined, { numeric: true });
+  });
+  rowLabel("Resource pool (row = slot)", y, "group");
+  y += ROW + 2;
+  for (const slot of slots) {
+    rowsOf[slot] = y;
+    rowLabel(slot, y);
+    y += ROW;
+  }
+  for (const j of R.jobs) {
+    const row = rowsOf[j.slot];
+    if (row === undefined) continue;
+    const k = kernelInfo(j.task, j.kernel);
+    const timedOut = !!k && k.status === "timeout" && k.failed_step === j.kind;  // killed at the job time limit
+    const failed = j.outcome === "error" || timedOut;
+    const color = j.outcome === "cancelled" ? COLORS.cancel : COLORS[j.kind] || "#999";
+    bar(row + 1, j.start, j.end, color, { title: `${j.kind} · ${shortTask(j.task)}/${j.kernel}`, rows: [["slot", j.slot],
+      ["queued", fmt(j.start - j.queued) + " s"], ["ran", fmt(j.end - j.start) + " s"], ["outcome", timedOut ? "timed out, killed" : j.outcome], ["concurrent on GPU", j.concurrency ?? "-"],
+      ["kernel status", k ? k.status : "-"], ["speedup", k && k.speedup ? fmt(k.speedup, 3) + "×" : "-"]] },
+      { h: ROW - 4, stroke: failed ? COLORS.bad : null });
+  }
+  for (const r of R.roles) {
+    const rows = slots.filter(s => s.split(":")[1].split("#")[0] === String(r.gpu)).map(s => rowsOf[s]);
+    if (!rows.length) continue;
+    const m = el("circle", { cx: x(r.t), cy: Math.min(...rows) + 6, r: 5, fill: COLORS.accent, stroke: "#111" }, svg);
+    attachTip(m, { title: `GPU ${r.gpu} role change`, rows: [["change", `${r.old} → ${r.new}`], ["validation load", fmt(r.load_validate_s) + " s"], ["benchmark load", fmt(r.load_benchmark_s) + " s"]] });
+    mark(m, r.t);
+  }
+  const bottom = y + 6;
+  axis(top0 - 8, bottom);
+  const cursor = el("line", { x1: x(0), x2: x(0), y1: top0 - 8, y2: bottom, stroke: COLORS.accent, "stroke-width": 1.5 }, svg);
+  svg.setAttribute("width", width);
+  svg.setAttribute("height", bottom + 10);
+  return { animated, cursor };
+}
+const timeline = drawTimeline(D, $("timeline"));
+let cmpTimeline = null;
+if (D.compare && D.compare.timeline) {
+  const [la, lb] = D.compare.labels;
+  $("timeline-title").textContent = `${la} execution timeline`;
+  $("compare-timeline-title").textContent = `${lb} execution timeline`;
+  $("compare-timeline-wrap").hidden = false;  // before drawing: hidden text measures 0 wide
+  cmpTimeline = drawTimeline(D.compare.timeline, $("compare-timeline"));
+}
+
+// ---- speedup over time (same time axis as the timeline) -------------------
+function speedAxes(node, xOf, span, peakValue) {
+  const H = 300, T = 12, B = H - 34;
+  node.setAttribute("width", width); node.setAttribute("height", H);
+  const peak = Math.max(1.5, peakValue) * 1.08;
+  const step = [0.25, 0.5, 1, 2, 2.5, 5, 10, 20, 50, 100].find(s => peak / s <= 6) || 200;
+  const top = Math.ceil(peak / step) * step;
+  const yOf = v => B - (v / top) * (B - T);
+  for (let v = 0; v <= top + 1e-9; v += step) {
+    el("line", { x1: LEFT, x2: width - RIGHT, y1: yOf(v), y2: yOf(v), stroke: "#232733" }, node);
+    el("text", { x: LEFT - 8, y: yOf(v) + 4, "text-anchor": "end", class: "label" }, node).textContent = `${+v.toFixed(2)}×`;
+  }
+  for (let t = 0, tick = tickFor(span); t <= span + 1e-6; t += tick) {
+    el("line", { x1: xOf(t), x2: xOf(t), y1: T, y2: B, stroke: "#1f232c" }, node);
+    el("text", { x: xOf(t), y: B + 16, "text-anchor": "middle", class: "label" }, node).textContent = timeLabel(t);
+  }
+  el("line", { x1: LEFT, x2: width - RIGHT, y1: yOf(1), y2: yOf(1), stroke: "#5e6c84", "stroke-dasharray": "5 4" }, node);
+  el("text", { x: 12, y: T + 12, class: "group" }, node).textContent = "Speedup";
+  el("text", { x: 12, y: T + 28, class: "label" }, node).textContent = "reference time / kernel time";
+  el("text", { x: 12, y: B + 16, class: "label" }, node).textContent = "run time";
+  return { yOf, T, B };
+}
+const sp = $("speedup");
+const { yOf: sy, T: SPT, B: SPB } = speedAxes(sp, x, SPAN, Math.max(0, ...D.benchmarks.map(b => b.speedup)));
+if (!D.benchmarks.length) {
+  el("text", { x: (LEFT + width - RIGHT) / 2, y: (SPT + SPB) / 2, "text-anchor": "middle", class: "label" }, sp).textContent = "no kernel was timed";
+}
+const taskColor = i => D.tasks.length > 1 ? PALETTE[i % PALETTE.length] : RUN_COLORS[0];
+const stoppedBy = new Map(D.spans.filter(s => s.termination).map(s => [`${s.task}|${s.termination.kernel}`, s.termination]));
+const lineLayer = el("g", {}, sp), dotLayer = el("g", {}, sp);
+const spLines = [], spAnimated = [];
+const dense = D.benchmarks.length > 120;
+const DOT = dense ? 3 : 4.5;
+D.tasks.forEach((task, i) => {
+  const color = taskColor(i);
+  const pts = D.benchmarks.filter(b => b.task === task).sort((a, b) => a.t - b.t);
+  spLines.push({ pts: [{ t: 0, speedup: 0 }, ...pts], node: el("polyline", { fill: "none", stroke: color,
+    "stroke-width": dense ? 1.5 : 2, "stroke-linejoin": "round" }, lineLayer) });  // from 0 until the first timing
+  let best = 0;
+  for (const b of pts) {
+    best = Math.max(best, b.speedup);
+    const stop = stoppedBy.get(`${task}|${b.kernel}`);
+    const rows = [["source", b.source], ["speedup", fmt(b.speedup, 3) + "×"], ["best so far", fmt(best, 3) + "×"],
+      ["time", fmt(b.t) + " s"], ["iteration", b.iteration]];
+    if (stop) {
+      rows.push(["early termination", `above ${fmt(stop.baseline, 3)}× (${stop.criterion})`]);
+      spAnimated.push({ t: b.t, node: el("circle", { cx: x(b.t), cy: sy(b.speedup), r: DOT + 4.5, fill: "none", stroke: STOP_RING,
+        "stroke-width": 2, "pointer-events": "none" }, dotLayer) });
+    }
+    const dot = el("circle", { cx: x(b.t), cy: sy(b.speedup), r: DOT, fill: b.source === "main" ? "var(--panel)" : color,
+      stroke: color, "stroke-width": dense ? 1.5 : 2 }, dotLayer);
+    attachTip(dot, { title: `${shortTask(task)} / ${b.kernel}`, rows });
+    spAnimated.push({ t: b.t, node: dot });
+  }
+});
+const spCursor = el("line", { x1: x(0), x2: x(0), y1: SPT, y2: SPB, stroke: COLORS.accent, "stroke-width": 1.5 }, sp);
+const runName = D.compare ? D.compare.labels[0] : "";
+$("speedup-legend").innerHTML = D.tasks.map((task, i) =>
+  `<span><i style="background:${taskColor(i)};width:18px;height:3px;vertical-align:3px"></i>${esc(D.tasks.length > 1 ? shortTask(task) : (runName || shortTask(task)))}</span>`).join("")
+  + '<span>● spec kernel</span><span>○ main kernel</span><span><b style="color:#fff">◯</b> met the termination criterion</span>'
+  + '<span>gray dashed line: 1× (as fast as the reference)</span>';
+
+// ---- comparison with another run (specgen report --compare) ---------------
+const C = D.compare;
+let compareUpdate = () => {};
+if (C) {
+  const [la, lb] = C.labels;
+  $("compare-wrap").hidden = false;
+  $("compare-title").textContent = `${la} vs ${lb}`;
+  const cs = $("compare");
+  const span = Math.max(D.duration, C.duration, 1);
+  const cxOf = t => LEFT + (Math.min(Math.max(0, t), span) / span) * (width - LEFT - RIGHT);
+  const values = Object.values(C.curves).flatMap(([a, b]) => [...a, ...b].map(p => p[1]));
+  const { yOf: cyOf, T: CT, B: CB } = speedAxes(cs, cxOf, span, Math.max(0, ...values));
+  const cmpLines = [];
+  D.tasks.forEach((task, i) => {
+    const row = C.rows.find(r => r.task === task);
+    if (!row) return;
+    (C.curves[task] || []).forEach((curve, side) => cmpLines.push({
+      curve, end: (side ? row.b.end : row.a.end) ?? (side ? C.duration : D.duration),
+      node: el("polyline", { fill: "none", stroke: RUN_COLORS[side], "stroke-width": 2,
+        "stroke-dasharray": D.tasks.length > 1 && i ? "6 4" : "none", "stroke-linejoin": "round" }, cs) }));
+  });
+  const cmpCursor = el("line", { x1: cxOf(0), x2: cxOf(0), y1: CT, y2: CB, stroke: COLORS.accent, "stroke-width": 1.5 }, cs);
+  const steps = (curve, until) => {  // 0 until the first timing; then the best so far holds until the next improvement
+    const pts = [[0, 0]];
+    for (const [t, v] of curve) {
+      if (t > until) break;
+      pts.push([t, pts.at(-1)[1]]);
+      pts.push([t, v]);
+    }
+    pts.push([until, pts.at(-1)[1]]);
+    return pts.map(([t, v]) => `${cxOf(t)},${cyOf(v)}`).join(" ");
+  };
+  const minutes = s => s === null || s === undefined ? "-" : `${(s / 60).toFixed(1)} min`;
+  C.rows.forEach((row, i) => {  // when this run first reached the other run's final best
+    if (row.a.reach === null || row.a.reach === undefined) return;
+    const xr = cxOf(row.a.reach);
+    el("line", { x1: xr, x2: xr, y1: CT, y2: CB, stroke: COLORS.accent, "stroke-dasharray": "3 3", "stroke-width": 1.5 }, cs);
+    el("circle", { cx: xr, cy: cyOf(row.b.best), r: 5, fill: "none", stroke: COLORS.accent, "stroke-width": 2 }, cs);
+    const label = el("text", { x: Math.min(xr + 6, width - RIGHT - 380), y: CT + 14 + 16 * i, class: "label", fill: COLORS.accent }, cs);
+    label.textContent = `${minutes(row.a.reach)}${pctOf(row.a.reach, row.b.end, lb)}: reached ${lb}'s best ${fmt(row.b.best, 2)}×`;
+  });
+  compareUpdate = now => {
+    const cut = now >= D.duration - 1e-6 ? Infinity : now;
+    for (const l of cmpLines) l.node.setAttribute("points", steps(l.curve, Math.min(cut, l.end)));
+    cmpCursor.setAttribute("x1", cxOf(now)); cmpCursor.setAttribute("x2", cxOf(now));
+  };
+  $("compare-legend").innerHTML = C.labels.map((label, side) =>
+    `<span><i style="background:${RUN_COLORS[side]};width:18px;height:3px;vertical-align:3px"></i>${esc(label)}</span>`).join("")
+    + (D.tasks.length > 1 ? `<span>solid: ${esc(shortTask(D.tasks[0]))}, dashed: the other tasks</span>` : "")
+    + "<span>each line: the best speedup so far</span>";
+  const time = v => v === null || v === undefined ? "-" : timeLabel(Math.round(v));
+  const speed = v => v === null || v === undefined ? "-" : fmt(v, 2) + "×";
+  const reach = v => v === null || v === undefined ? "not reached" : timeLabel(Math.round(v));
+  $("compare-table").innerHTML = `<table><tr><th>Task</th><th>Iterations</th><th>Run time</th>
+    <th>First timing</th><th>Final best</th><th>Reached the other's final best</th><th>Kernels evaluated (valid)</th><th>Iterations with the main generation aborted</th></tr>`
+    + C.rows.map(r => `<tr><td>${esc(shortTask(r.task))}</td><td>${r.a.iterations} / ${r.b.iterations}</td>
+      <td>${time(r.a.end)} / ${time(r.b.end)}</td><td>${time(r.a.first)} / ${time(r.b.first)}</td>
+      <td>${speed(r.a.best)} / ${speed(r.b.best)}</td><td>${reach(r.a.reach)} / ${reach(r.b.reach)}</td>
+      <td>${r.a.evaluated} (${r.a.valid}) / ${r.b.evaluated} (${r.b.valid})</td><td>${r.a.aborted} / ${r.b.aborted}</td></tr>`).join("")
+    + `</table><p class="cmp-note">Each cell is "${esc(la)} / ${esc(lb)}", times from the start of each run. Reached the other's final best: when the best speedup first reached or passed the other run's final best.</p>`;
+}
+
+// ---- termination criteria, token cost and profiler GPU utilization -------------
+(function renderCriteria() {
+  const tok = v => v === null || v === undefined ? "-" : v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : `${(v / 1e3).toFixed(0)}k`;
+  const mins = s => s === null || s === undefined ? "-" : `${(s / 60).toFixed(1)} min`;
+  const busy = p => !p || p.share === null || p.share === undefined ? "-" : `${fmt(p.share * 100, 1)}% (busy ${mins(p.busy_s)})`;
+  const NAMES = { best: "best (beats the best so far)", hist_avg: "hist_avg (beats the mean of the kernels selected so far)",
+    first_valid: "first_valid (the first valid kernel)",
+    baseline: "Baseline: one kernel per iteration (no spec, no early termination)" };
+  // ref: the compared run's actual row; this run's rows show their values relative to it
+  const rowsOf = (label, criteria, ref) => (criteria.baseline ? ["baseline"] : ["best", "hist_avg", "first_valid"]).map(name => {
+    const c = criteria[name];
+    const rel = (v, base) => ref ? pctOf(v, base, lb) : "";
+    return `<tr><td>${esc(label)}</td><td>${NAMES[name]}</td>
+      <td class="num">${c.best ? fmt(c.best, 3) + "×" : "-"}${ref ? timesOf(c.best, ref.best, lb) : ""}</td>
+      <td class="mono">${c.per_iteration.map(v => v === null ? "-" : fmt(v, 2)).join(" ")}</td>
+      <td class="num">${mins(c.seconds)}${rel(c.seconds, ref && ref.seconds)}</td>
+      <td class="num">${tok(c.tokens.in_hit_free)}${rel(c.tokens.in_hit_free, ref && ref.tokens.in_hit_free)}</td>
+      <td class="num">${tok(c.tokens.in_hit_1_50)}${rel(c.tokens.in_hit_1_50, ref && ref.tokens.in_hit_1_50)}</td>
+      <td class="num">${tok(c.tokens.out)}${rel(c.tokens.out, ref && ref.tokens.out)}</td>
+      <td class="num">${busy(c.profiler)}</td></tr>`;
+  }).join("");
+  const stopRow = (label, side, other, ref, refEnd) => side && side.at_reach ? `<tr><td>${esc(label)}</td>
+      <td>stop on reaching ${esc(other)}'s best</td><td class="num">≥ ${fmt(side.target, 3)}×</td><td></td>
+      <td class="num">${mins(side.reach)}${ref ? pctOf(side.reach, refEnd, lb) : ""}</td>
+      <td class="num">${tok(side.at_reach.in_hit_free)}${ref ? pctOf(side.at_reach.in_hit_free, ref.tokens.in_hit_free, lb) : ""}</td>
+      <td class="num">${tok(side.at_reach.in_hit_1_50)}${ref ? pctOf(side.at_reach.in_hit_1_50, ref.tokens.in_hit_1_50, lb) : ""}</td>
+      <td class="num">${tok(side.at_reach.out)}${ref ? pctOf(side.at_reach.out, ref.tokens.out, lb) : ""}</td>
+      <td class="num">${busy(side.profiler_at_reach)}</td></tr>` : "";
+  const [la, lb] = C ? C.labels : [D.title, ""];
+  const html = D.tasks.map(task => {
+    const row = C ? C.rows.find(r => r.task === task) : null;
+    if (row) { row.a.target = row.b.best; row.b.target = row.a.best; }
+    const theirCriteria = C && C.criteria[task];
+    const ref = theirCriteria ? theirCriteria.baseline || theirCriteria[C.criterion] || null : null;
+    const mine = rowsOf(la, D.criteria[task], ref) + (row ? stopRow(la, row.a, lb, ref, row.b.end) : "");
+    const theirs = theirCriteria ? rowsOf(lb, theirCriteria, null) + stopRow(lb, row.b, la, null, null) : "";
+    return `<h3>${esc(shortTask(task))}</h3><table><tr><th>Run</th><th>Termination criterion</th><th>Final best</th><th>Best after each iteration</th>
+      <th>Time</th><th>Input tokens (cache hits as 0)</th><th>Input tokens (cache hits as 1/50)</th><th>Output tokens</th>
+      <th>Profiler GPU utilization (busy / time)</th></tr>${mine}${theirs}</table>`;
+  }).join("");
+  const defs = [  // HTML: formulas set as math
+    "Baseline = one kernel per iteration (no spec, no early termination): the actual run only",
+    "The other criteria = estimates on the actual timeline: each iteration cut at its first timing that meets the criterion "
+      + "(plus the confirmation timing when there is a bar to beat), the later iterations otherwise as they ran",
+    "Tokens = the whole prompt of every request sent before the cut + the output before the cut (main generations from "
+      + "their progress events, aborted specs from their output rate)",
+    `Cache hits as 1/50: <span class="math"><i>x</i><sub>hit</sub> → ${frac("<i>x</i><sub>hit</sub>", "50")}</span> (<i>x</i><sub>hit</sub>: cache-hit input)`,
+    `Profiler GPU utilization = <span class="math">${frac("time with a benchmark or ncu running", "time")}</span> (estimates count only the time they keep; overlaps count once)`,
+    C ? `In parentheses: relative to ${esc(lb)}, time and tokens as a share of ${esc(lb)}'s whole run, speedups as a multiple of ${esc(lb)}'s final best` : "",
+  ].filter(Boolean);
+  $("criteria").innerHTML = html + `<ul class="defs">${defs.map(d => `<li>${d}</li>`).join("")}</ul>`;
+})();
+
+// ---- tables -------------------------------------------------------------
+(function renderTables() {
+  const it = D.iterations.map(r => `<tr><td>${esc(shortTask(r.task))}</td><td class="num">${r.iteration}</td><td>${esc(r.end_reason)}</td>
+    <td class="num">${fmt(r.seconds, 0)}</td><td>${esc(r.selected ?? "-")}</td><td>${r.selected_source ? `<span class="chip ${r.selected_source}">${r.selected_source}</span>` : "-"}</td>
+    <td class="num">${r.speedup ? fmt(r.speedup, 3) + "×" : "-"}</td><td>${statusChip(r.main_status)}</td><td class="num">${(r.triggers || []).length}</td>
+    <td class="num">${(r.triggers || []).reduce((a, t) => a + (t.k || 0), 0)}</td><td class="num">${r.candidates}</td><td class="num">${r.reasoning_tokens ?? "-"}</td></tr>`).join("");
+  $("iterations").innerHTML = `<table><tr><th>Task</th><th>Iter</th><th>End reason</th><th>Seconds</th><th>Selected</th><th>Source</th><th>Speedup</th>
+    <th>Main kernel</th><th>Triggers</th><th>Specs</th><th>Candidates</th><th>Reasoning tokens</th></tr>${it}</table>`;
+  const rows = Object.values(D.kernels).sort((a, b) => a.task.localeCompare(b.task) || a.iteration - b.iteration || a.kernel.localeCompare(b.kernel));
+  $("kernels").innerHTML = `<table><tr><th>Task</th><th>Kernel</th><th>Source</th><th>Trigger</th><th>Status</th><th>Speedup</th>
+    <th>Generation s</th><th>Build s</th><th>Validation s</th><th>Benchmark s</th><th>Selected</th></tr>${rows.map(k => `<tr><td>${esc(shortTask(k.task))}</td><td>${esc(k.kernel)}</td>
+    <td><span class="chip ${k.source}">${k.source}</span></td><td>${esc(k.trigger ?? "")}</td><td>${statusChip(k.status)}</td>
+    <td class="num">${k.speedup ? fmt(k.speedup, 3) + "×" : "-"}</td><td class="num">${fmt(k.generation_s)}</td><td class="num">${fmt(k.build_s)}</td>
+    <td class="num">${fmt(k.validate_s)}</td><td class="num">${fmt(k.benchmark_s)}</td><td>${k.selected ? "★" : ""}</td></tr>`).join("")}</table>`;
+})();
+
+// ---- event feed and excerpt -----------------------------------------------
+const feedItems = [];
+for (const t of D.triggers) feedItems.push({ t: t.t, html: `<b>${esc(shortTask(t.task))}</b> trigger #${t.index} (${esc(t.reason)}: ${esc(t.keyword || "fallback")}, ${t.fired_tokens} tokens) → k=${t.k}` });
+for (const b of D.benchmarks) feedItems.push({ t: b.t, html: `<b>${esc(shortTask(b.task))}</b> ${esc(b.kernel)} timed: <b>${fmt(b.speedup, 3)}×</b> (${b.source})` });
+for (const s of D.spans) {
+  feedItems.push({ t: s.start, html: `<b>${esc(shortTask(s.task))}</b> iteration ${s.iteration} started` });
+  if (s.termination) feedItems.push({ t: s.termination.t, html: `<b>${esc(shortTask(s.task))}</b> <span style="color:#ff8f73">early termination</span>: ${esc(s.termination.kernel)} ${fmt(s.termination.speedup, 3)}× above ${fmt(s.termination.baseline, 3)}; the main generation and the jobs in flight are aborted` });
+  if (s.end_reason && s.end_reason !== "terminated") feedItems.push({ t: s.end, html: `<b>${esc(shortTask(s.task))}</b> iteration ${s.iteration} ended (${esc(s.end_reason)}), selected ${esc(s.selected ?? "none")}` });
+}
+for (const m of D.mains) if (!m.aborted) feedItems.push({ t: m.end, html: `<b>${esc(shortTask(m.task))}</b> main generation finished (${m.reasoning_tokens ?? "?"} reasoning tokens)` });
+for (const r of D.roles) feedItems.push({ t: r.t, html: `GPU ${esc(r.gpu)}: ${esc(r.old)} → ${esc(r.new)}` });
+feedItems.sort((a, b) => a.t - b.t);
+const feed = $("feed");
+let shownFeed = -1;
+function renderFeed(now) {
+  let last = -1;
+  while (last + 1 < feedItems.length && feedItems[last + 1].t <= now) last++;
+  if (last === shownFeed) return;
+  shownFeed = last;
+  feed.innerHTML = feedItems.slice(Math.max(0, last - 59), last + 1).reverse()
+    .map(i => `<li><span class="ts">${fmt(i.t)}s</span>${i.html}</li>`).join("");
+}
+function showExcerpt(t) {
+  let text = esc(t.excerpt || "(the reasoning text was not saved)");
+  if (t.keyword) {
+    const k = esc(t.keyword);
+    const idx = text.toLowerCase().lastIndexOf(k.toLowerCase());
+    if (idx >= 0) text = text.slice(0, idx) + "<mark>" + text.slice(idx, idx + k.length) + "</mark>" + text.slice(idx + k.length);
+  }
+  $("excerpt-head").innerHTML = `<span class="chip">${esc(shortTask(t.task))} · iter ${t.iteration} · trigger #${t.index}</span>
+    <span class="chip">${esc(t.reason)}</span> <span class="chip">prefix ${t.fired_tokens} tokens</span> <span class="chip">k = ${t.k}</span>`;
+  $("excerpt").innerHTML = "…" + text + '<span style="color:var(--accent)"> ✂ cut here, handed to spec generation</span>';
+}
+
+// ---- stats ----------------------------------------------------------------
+const statsBox = $("stats");
+function renderStats(now) {
+  const trig = D.triggers.filter(t => t.t <= now);
+  const specs = D.specs.filter(s => s.start <= now);
+  const benches = D.benchmarks.filter(b => b.t <= now);
+  const best = {};
+  for (const b of benches) best[b.task] = Math.max(best[b.task] || 0, b.speedup);
+  const busy = D.jobs.filter(j => j.start <= now && j.end > now);
+  const cells = [["triggers", trig.length], ["spec generations", specs.length], ["jobs running", busy.length], ["kernels timed", benches.length]];
+  for (const task of D.tasks) cells.push([`${shortTask(task)} best`, best[task] ? fmt(best[task], 2) + "×" : "-"]);
+  statsBox.innerHTML = cells.map(([k, v]) => `<div class="stat"><div class="v">${v}</div><div class="k">${esc(k)}</div></div>`).join("");
+}
+
+// ---- replay ---------------------------------------------------------------
+const scrub = $("scrub"), clock = $("clock"), playBtn = $("play");
+let now = D.duration, playing = false, lastFrame = null, lastTrigger = null;
+function animateTimeline(tl, t) {
+  for (const a of tl.animated) {
+    if (a.start > t) { a.node.style.display = "none"; continue; }
+    a.node.style.display = "";
+    if (a.kind === "bar") a.node.setAttribute("width", Math.max(1.5, x(Math.min(a.end, t)) - x(a.start)));
+    if (a.stroke) a.node.setAttribute("stroke", t >= a.end ? a.stroke : "none");
+  }
+  tl.cursor.setAttribute("x1", x(now)); tl.cursor.setAttribute("x2", x(now));
+}
+function update() {
+  animateTimeline(timeline, now);
+  if (cmpTimeline) animateTimeline(cmpTimeline, now >= D.duration - 1e-6 ? Infinity : now);  // a longer compared run shows whole at the end
+  for (const a of spAnimated) a.node.style.display = a.t <= now ? "" : "none";
+  for (const l of spLines) l.node.setAttribute("points", l.pts.filter(b => b.t <= now).map(b => `${x(b.t)},${sy(b.speedup)}`).join(" "));
+  spCursor.setAttribute("x1", x(now)); spCursor.setAttribute("x2", x(now));
+  compareUpdate(now);
+  clock.textContent = `${fmt(now)} s / ${fmt(D.duration)} s`;
+  scrub.value = Math.round((now / Math.max(1, D.duration)) * 1000);
+  renderFeed(now);
+  renderStats(now);
+  if ($("follow").checked) {
+    const t = D.triggers.filter(t => t.t <= now).at(-1);
+    if (t && t !== lastTrigger) { lastTrigger = t; showExcerpt(t); }
+  }
+}
+function frame(ts) {
+  if (!playing) return;
+  if (lastFrame !== null) now = Math.min(D.duration, now + (ts - lastFrame) / 1000 * Number($("speed").value));
+  lastFrame = ts;
+  update();
+  if (now >= D.duration) { playing = false; playBtn.textContent = "▶ Replay"; return; }
+  requestAnimationFrame(frame);
+}
+playBtn.addEventListener("click", () => {
+  playing = !playing;
+  playBtn.textContent = playing ? "⏸ Pause" : "▶ Replay";
+  if (playing) { if (now >= D.duration) now = 0; lastFrame = null; $("follow").checked = true; requestAnimationFrame(frame); }
+});
+$("reset").addEventListener("click", () => { now = 0; lastTrigger = null; update(); });
+scrub.addEventListener("input", () => { now = (Number(scrub.value) / 1000) * D.duration; update(); });
+update();
+}
+
+// ---- the page: one section per run ---------------------------------------
+const pageHead = document.getElementById("page");
+pageHead.hidden = PAGE.sections.length < 2 && !document.getElementById("intro").innerHTML.trim();
+document.getElementById("traces").classList.toggle("single", PAGE.sections.length < 2);
+const blocks = [];
+for (const D of PAGE.sections) {
+  const root = document.getElementById("task-template").content.firstElementChild.cloneNode(true);
+  if (D.anchor) root.id = D.anchor;
+  document.getElementById("sections").appendChild(root);
+  renderTask(root, D);  // while expanded: the drawing measures text and widths
+  root.querySelector(".task-bar").addEventListener("click", () => root.classList.toggle("collapsed"));
+  blocks.push(root);
+}
+document.getElementById("expand-all").addEventListener("click", () => blocks.forEach(b => b.classList.remove("collapsed")));
+document.getElementById("collapse-all").addEventListener("click", () => blocks.forEach(b => b.classList.add("collapsed")));
+for (const link of document.querySelectorAll('#intro a[href^="#"]')) {  // a link to a section opens it
+  link.addEventListener("click", () => { const b = document.querySelector(link.getAttribute("href")); if (b) b.classList.remove("collapsed"); });
+}
+</script>
+</body>
+</html>

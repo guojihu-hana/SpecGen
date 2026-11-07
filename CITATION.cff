@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use SpecGen, please cite the paper below."
+title: "SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation"
+type: software
+license: MIT
+authors:
+  - given-names: Jihu
+    family-names: Guo
+  - given-names: Sitian
+    family-names: Lu
+  - given-names: Tenghui
+    family-names: Ma
+  - given-names: Wei
+    family-names: Gao
+  - given-names: Zhisheng
+    family-names: Ye
+  - given-names: Xingcheng
+    family-names: Zhang
+  - given-names: Dahua
+    family-names: Lin
+preferred-citation:
+  type: article
+  title: "SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation"
+  authors:
+    - given-names: Jihu
+      family-names: Guo
+    - given-names: Sitian
+      family-names: Lu
+    - given-names: Tenghui
+      family-names: Ma
+    - given-names: Wei
+      family-names: Gao
+    - given-names: Zhisheng
+      family-names: Ye
+    - given-names: Xingcheng
+      family-names: Zhang
+    - given-names: Dahua
+      family-names: Lin
+  journal: "arXiv preprint arXiv:2606.17518"
+  doi: "10.48550/arXiv.2606.17518"
+  url: "https://arxiv.org/abs/2606.17518"
+  year: 2026
