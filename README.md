@@ -8,6 +8,8 @@ an iteration early when a kernel meets the termination criterion.
 Paper: *SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation*, PPoPP 2027
 ([arXiv:2606.17518](https://arxiv.org/abs/2606.17518)).
 
+- **Artifact evaluation:** [ae/README.md](ae/README.md): a 30-minute getting-started test, the experiments, and
+  our reference results.
 - **How the code works and how to extend it:** [docs/architecture.md](docs/architecture.md).
 
 ## Quick start

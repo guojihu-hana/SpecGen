@@ -20,5 +20,6 @@ data/
 figs/
 plot/
 *.csv
+!ae/reference/*.csv
 gemm_temp_monitor.py
 get_time_analysis.py

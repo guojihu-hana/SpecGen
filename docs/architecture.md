@@ -44,7 +44,7 @@ kills the process group.
 
 ## 3. Generation
 
-- **Model profiles** (`configs/models.yaml`): per model, where the reasoning arrives (`field`, a
+- **Model profiles** (`configs/models.yaml`, `ae/models.yaml`): per model, where the reasoning arrives (`field`, a
   separate delta field such as `reasoning_content`, or `inline` between think tags), the tokenizer for counting,
   sampling settings, and its endpoints (`backend`, `base_url`, `model`, `api_key_env`). `${VAR}` in a value comes
   from the environment; keys are only read from environment variables. `modes` adds request parameters per
@@ -90,7 +90,7 @@ and profiling roles by load, one at a time, with hysteresis), `fifo` (any GPU ta
 ## 6. Ending an iteration
 
 - **Baseline mode** (`--no-enable-spec-gen`): one kernel per iteration from the main generation, evaluated, then the
-  next iteration; no spec, no early termination.
+  next iteration; no spec, no early termination. The artifact evaluation uses it as CudaForge.
 - **Early termination** (`--enable-termination --termination-criteria ...`): `first_valid` (the first kernel that
   passes validation and timing), `best` (beats the best so far), `hist_avg` (beats the mean speedup of the kernels
   earlier iterations selected); iteration 0 compares with the reference (1.0x). `--termination-margin` (default
@@ -128,6 +128,7 @@ per-iteration records derived from it.
   spec generations, every job on its GPU slot), speedup over time, the comparison with another run, and estimates
   of the other termination criteria (`analysis/criteria.py` cuts the recorded timeline where a criterion would have
   ended each iteration, optionally within a time or token budget).
+- `ae/report.py`: the artifact evaluation's page and summary tables for pairs of runs.
 
 ## 10. Extending SpecGen
 

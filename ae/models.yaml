@@ -1,0 +1,53 @@
+# Model profiles of the artifact evaluation (same settings as configs/models.yaml).  ${VAR} comes from the
+# environment, which ae/ae.py fills from DEEPSEEK_API_KEY, GLM_API_KEY (GLM_API_URL, GLM_API_MODEL) or GLM_URL
+# (GLM_SERVER_KEY); keys never go in this file.
+
+# GLM-5.1-FP8 served by ae/serve_glm51.sh (vLLM, --served-model-name GLM-5.1-FP8).
+GLM-5.1-FP8:
+  tokenizer: generic
+  reasoning: auto
+  think_tags: ["<think>", "</think>"]
+  sampling: {temperature: 0.6, top_p: 0.95, spec_temperature: 0.9, max_tokens: 32768}
+  endpoints:
+    selfhost:
+      backend: vllm
+      base_url: "${SPECGEN_GLM_SELFHOST_URL}"
+      api_key_env: SPECGEN_GLM_SELFHOST_KEY
+      model: GLM-5.1-FP8
+
+# GLM-5.1 through an OpenAI-compatible API (https://docs.z.ai): reasoning streams in `reasoning_content`; no prefill
+# (spec prompts reprompt); temperatures within [0, 1].
+GLM-5.1:
+  tokenizer: generic
+  reasoning: field
+  reasoning_field: reasoning_content
+  think_tags: ["<think>", "</think>"]
+  sampling: {temperature: 0.6, top_p: 0.95, spec_temperature: 0.9, spec_temperature_max: 1.0, max_tokens: 32768}
+  endpoints:
+    api:
+      backend: api
+      base_url: "${SPECGEN_GLM_API_URL}"
+      api_key_env: SPECGEN_GLM_API_KEY
+      model: "${SPECGEN_GLM_API_MODEL}"
+      modes:
+        main: {thinking: {type: enabled}}
+        spec: {thinking: {type: disabled}}
+
+# DeepSeek API (https://api-docs.deepseek.com): reasoning streams in `reasoning_content`; thinking mode ignores
+# temperature, and its top_p is effective in [0.95, 1.0].
+DeepSeek-V4-Pro:
+  tokenizer: generic
+  reasoning: field
+  reasoning_field: reasoning_content
+  think_tags: ["<think>", "</think>"]
+  sampling: {temperature: 1.0, top_p: 0.95, spec_temperature: 1.0, max_tokens: 131072}
+  endpoints:
+    api:
+      backend: api
+      base_url: https://api.deepseek.com
+      api_key_env: SPECGEN_DEEPSEEK_API_KEY
+      model: deepseek-v4-pro
+      prefill: {style: deepseek, base_url: https://api.deepseek.com/beta}
+      modes:
+        main: {thinking: {type: enabled}, reasoning_effort: max}
+        spec: {thinking: {type: disabled}}

@@ -1,0 +1,1625 @@
+{"allocation": "fixed", "devices": ["validator:2", "profiler:3", "builder:cpu"], "endpoint": "api", "gpu_type": "B300", "interrupted_kernels": 0, "model": "DeepSeek-V4-Flash", "previous_end": null, "resumed": false, "spec": false, "spec_prompt_mode": null, "t": 1793996135.867621, "tasks": ["level3/1_MLP"], "type": "run_started"}
+{"allocation": "fixed", "devices": [{"capacity": 8, "gpu": "2", "label": "validator:2", "role": "validator"}, {"capacity": 1, "gpu": "3", "label": "profiler:3", "role": "profiler"}, {"capacity": 32, "gpu": null, "label": "builder:cpu", "role": "builder"}], "t": 1793996135.867684, "type": "pool_started"}
+{"epoch": 0, "iteration": 0, "t": 1793996135.878037, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 0, "t": 1793996135.885924, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 0, "t": 1793996142.677829, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996148.723235, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996154.107229, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996160.289325, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996165.927836, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996171.59529, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996176.640434, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996182.379489, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996188.579538, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996194.55495, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996199.827429, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996204.998279, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996210.052905, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996215.743508, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996221.80798, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996227.760744, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996233.215786, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996238.397559, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996244.244169, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996250.755746, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996254.977548, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996260.155544, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996266.274395, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996271.590451, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996276.562577, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996281.690686, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996285.789301, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996290.502843, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996295.419297, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996300.994616, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996306.496852, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996312.511644, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996318.797957, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996322.462963, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996326.337387, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996330.353193, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996334.550075, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996339.801059, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996343.810078, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996349.076341, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996353.791523, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996359.529805, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996364.883114, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996370.65606, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996376.045043, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996380.219122, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996385.296296, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996387.959848, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 0, "t": 1793996389.948221, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"content_tokens": 3902, "finish_reason": "stop", "iteration": 0, "ok": true, "reasoning_tokens": 49819, "seconds": 269.234, "t": 1793996405.122333, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 0, "kind": "build", "label": "level3/1_MLP/i000-main/build", "t": 1793996405.138965, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i000-main/build", "slot": "builder:cpu#0", "t": 1793996405.139099, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i000-main/build", "outcome": "done", "seconds": 2.994, "slot": "builder:cpu#0", "t": 1793996408.133073, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 0, "kind": "validate", "label": "level3/1_MLP/i000-main/validate", "t": 1793996408.139279, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i000-main/validate", "slot": "validator:2#0", "t": 1793996408.139349, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i000-main/validate", "outcome": "done", "seconds": 27.61, "slot": "validator:2#0", "t": 1793996435.749748, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 0, "kind": "benchmark", "label": "level3/1_MLP/i000-main/benchmark", "t": 1793996435.754331, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i000-main/benchmark", "slot": "profiler:3#0", "t": 1793996435.75439, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i000-main/benchmark", "outcome": "done", "seconds": 11.224, "slot": "profiler:3#0", "t": 1793996446.977969, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 0, "kernel": "i000-main", "source": "main", "speedup": 3.9380785855561657, "t": 1793996446.985184, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 0, "kind": "ncu", "label": "level3/1_MLP/i000-main/ncu", "t": 1793996446.986636, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i000-main/ncu", "slot": "profiler:3#0", "t": 1793996446.986696, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i000-main", "status": "success", "t": 1793996446.991735, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 0, "selected": "i000-main", "t": 1793996446.992766, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i000-main/ncu", "outcome": "done", "seconds": 33.57, "slot": "profiler:3#0", "t": 1793996480.556462, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 0, "kernel": "i000-main", "kernels": 2, "ncu_s": 33.393, "ok": true, "rules": 23, "selection": "nvtx", "status": "success", "t": 1793996480.565607, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 1, "seconds": 33.573, "t": 1793996480.565776, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 1, "iteration": 1, "t": 1793996480.573463, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 1, "t": 1793996480.582294, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 1, "t": 1793996487.995934, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996494.568828, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996501.091927, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996507.368954, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996513.291804, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996518.616708, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996524.85387, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996531.862308, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996538.036071, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996544.154218, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996549.404267, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996555.485663, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996561.278591, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996567.124179, "task": "level3/1_MLP", "tokens": 14001, "type": "main_progress"}
+{"iteration": 1, "t": 1793996573.180228, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996579.396343, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996585.848308, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996592.294977, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996597.924547, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996604.421711, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996610.659746, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996616.514389, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996622.45107, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996628.111556, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996633.791631, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996639.990747, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996646.160129, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996651.513514, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996657.957279, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996664.414856, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996670.861162, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996675.992855, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996682.70987, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996689.423528, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996695.450026, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996701.451925, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996707.462776, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996713.586449, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996719.418482, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996725.027024, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996730.672352, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996736.262941, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996742.134477, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996747.99682, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996754.439083, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996760.904291, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996766.542769, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996772.49825, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996778.358162, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996784.679819, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996790.660037, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996796.935141, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996802.612042, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996807.301895, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996812.342332, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996818.046326, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996824.310351, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996829.454067, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996834.288192, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996839.114827, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996843.525897, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996848.443477, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996854.559895, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996859.201271, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996863.564846, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996867.118675, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996872.86951, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996878.350241, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996883.15506, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996887.703822, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996893.278043, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996898.394734, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996903.45287, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996906.414224, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996909.458984, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996912.279963, "task": "level3/1_MLP", "tokens": 76000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996915.232041, "task": "level3/1_MLP", "tokens": 77000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996920.880185, "task": "level3/1_MLP", "tokens": 78000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996924.314932, "task": "level3/1_MLP", "tokens": 79000, "type": "main_progress"}
+{"iteration": 1, "t": 1793996930.246396, "task": "level3/1_MLP", "tokens": 80000, "type": "main_progress"}
+{"content_tokens": 5758, "finish_reason": "stop", "iteration": 1, "ok": true, "reasoning_tokens": 80084, "seconds": 467.235, "t": 1793996947.820796, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 1, "kind": "build", "label": "level3/1_MLP/i001-main/build", "t": 1793996947.834514, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i001-main/build", "slot": "builder:cpu#0", "t": 1793996947.834628, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i001-main/build", "outcome": "done", "seconds": 2.614, "slot": "builder:cpu#0", "t": 1793996950.448421, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 1, "kind": "validate", "label": "level3/1_MLP/i001-main/validate", "t": 1793996950.453151, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i001-main/validate", "slot": "validator:2#0", "t": 1793996950.453209, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i001-main/validate", "outcome": "done", "seconds": 28.64, "slot": "validator:2#0", "t": 1793996979.093633, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 1, "kind": "benchmark", "label": "level3/1_MLP/i001-main/benchmark", "t": 1793996979.100846, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i001-main/benchmark", "slot": "profiler:3#0", "t": 1793996979.100905, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i001-main/benchmark", "outcome": "done", "seconds": 11.556, "slot": "profiler:3#0", "t": 1793996990.657398, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 1, "kernel": "i001-main", "source": "main", "speedup": 1.3352972741345184, "t": 1793996990.661825, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 1, "kind": "ncu", "label": "level3/1_MLP/i001-main/ncu", "t": 1793996990.662753, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i001-main/ncu", "slot": "profiler:3#0", "t": 1793996990.662811, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i001-main", "status": "success", "t": 1793996990.6665, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 1, "selected": "i001-main", "t": 1793996990.666642, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i001-main/ncu", "outcome": "done", "seconds": 38.943, "slot": "profiler:3#0", "t": 1793997029.60555, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 1, "kernel": "i001-main", "kernels": 3, "ncu_s": 38.752, "ok": true, "rules": 32, "selection": "nvtx", "status": "success", "t": 1793997029.618397, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 2, "seconds": 38.952, "t": 1793997029.618569, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 2, "iteration": 2, "t": 1793997029.629171, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 2, "t": 1793997029.642754, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 2, "t": 1793997037.022537, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997042.792628, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997048.866706, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997054.590923, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997060.575621, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997066.43061, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997072.327121, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997077.792073, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997083.30465, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997089.748806, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997096.082383, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997101.939867, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997107.661577, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997113.437559, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997119.489825, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997125.192074, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997130.091324, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997135.020096, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997140.650347, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997146.318163, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997152.093951, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997158.470905, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997164.457066, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997169.712976, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997175.801686, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997181.391665, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997187.055104, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997192.932473, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997198.194807, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997203.717052, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997209.898658, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997215.160736, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997220.692281, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997225.993183, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997231.267663, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997236.862661, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997242.807454, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997248.344354, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997253.498775, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997258.825217, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997264.042203, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997269.359565, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997274.911523, "task": "level3/1_MLP", "tokens": 43001, "type": "main_progress"}
+{"iteration": 2, "t": 1793997280.331549, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997284.587864, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997289.141724, "task": "level3/1_MLP", "tokens": 46001, "type": "main_progress"}
+{"iteration": 2, "t": 1793997294.283276, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997299.761268, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997305.473204, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997311.190615, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997316.881147, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997322.231745, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997328.006338, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997333.028124, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997337.78184, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997342.878798, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997346.787704, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997350.903342, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997356.223741, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997360.665714, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997364.866615, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997370.391171, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997375.320811, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997380.568113, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997386.039075, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997391.29718, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997396.626846, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997401.827522, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997407.344472, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997412.860071, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997418.455929, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997421.800601, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997425.489273, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997429.824551, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997434.12876, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997438.605354, "task": "level3/1_MLP", "tokens": 76000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997443.969932, "task": "level3/1_MLP", "tokens": 77000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997447.972919, "task": "level3/1_MLP", "tokens": 78000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997451.815514, "task": "level3/1_MLP", "tokens": 79000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997455.829634, "task": "level3/1_MLP", "tokens": 80000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997460.816632, "task": "level3/1_MLP", "tokens": 81000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997464.842275, "task": "level3/1_MLP", "tokens": 82000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997469.837061, "task": "level3/1_MLP", "tokens": 83000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997473.216145, "task": "level3/1_MLP", "tokens": 84000, "type": "main_progress"}
+{"iteration": 2, "t": 1793997478.546673, "task": "level3/1_MLP", "tokens": 85000, "type": "main_progress"}
+{"content_tokens": 6710, "finish_reason": "stop", "iteration": 2, "ok": true, "reasoning_tokens": 85221, "seconds": 470.376, "t": 1793997500.023181, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 2, "kind": "build", "label": "level3/1_MLP/i002-main/build", "t": 1793997500.041141, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i002-main/build", "slot": "builder:cpu#0", "t": 1793997500.041283, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i002-main/build", "outcome": "done", "seconds": 2.646, "slot": "builder:cpu#0", "t": 1793997502.687693, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 2, "kind": "validate", "label": "level3/1_MLP/i002-main/validate", "t": 1793997502.694104, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i002-main/validate", "slot": "validator:2#0", "t": 1793997502.694172, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i002-main/validate", "outcome": "done", "seconds": 47.715, "slot": "validator:2#0", "t": 1793997550.409019, "task": "level3/1_MLP", "type": "job_finished"}
+{"kernel": "i002-main", "status": "runtime_error", "t": 1793997550.415921, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 2, "selected": null, "t": 1793997550.416043, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"epoch": 3, "iteration": 3, "t": 1793997550.430994, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 3, "t": 1793997550.439392, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 3, "t": 1793997556.172742, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997562.067554, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997567.717731, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997573.786503, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997578.98423, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997584.420598, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997590.076945, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997595.240034, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997600.912635, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997606.062536, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997611.906645, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997616.890274, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997621.162362, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997626.457149, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997631.881236, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997637.31969, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997642.983883, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997648.828568, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997654.859842, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997660.905216, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997666.420531, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997672.2051, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997677.342444, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997682.318419, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997687.592987, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997693.630458, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997698.566622, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997704.055208, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997709.794155, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997715.784519, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997721.064014, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997726.451906, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997732.388648, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997738.247656, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997744.16907, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997749.233946, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997755.185765, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997760.771208, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997765.49052, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997770.054609, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997775.598926, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997781.550577, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997786.657153, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997792.912792, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997798.247378, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997803.920692, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997809.185295, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997814.428949, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997819.331056, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997824.780222, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997830.204707, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997835.509664, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997840.406244, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997844.666839, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997849.761041, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997854.215263, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997860.103103, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997865.614082, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997871.632502, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997875.836494, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997879.506362, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997884.066636, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997889.530311, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997893.565199, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997899.347591, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997903.085907, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997906.179713, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997909.313684, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997913.364973, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997917.601419, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997922.988066, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997928.156555, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 3, "t": 1793997932.871445, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"content_tokens": 4445, "finish_reason": "stop", "iteration": 3, "ok": true, "reasoning_tokens": 73429, "seconds": 397.518, "t": 1793997947.960444, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 3, "kind": "build", "label": "level3/1_MLP/i003-main/build", "t": 1793997947.973518, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i003-main/build", "slot": "builder:cpu#0", "t": 1793997947.973636, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i003-main/build", "outcome": "done", "seconds": 2.493, "slot": "builder:cpu#0", "t": 1793997950.46662, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 3, "kind": "validate", "label": "level3/1_MLP/i003-main/validate", "t": 1793997950.471251, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i003-main/validate", "slot": "validator:2#0", "t": 1793997950.471313, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i003-main/validate", "outcome": "done", "seconds": 27.262, "slot": "validator:2#0", "t": 1793997977.73291, "task": "level3/1_MLP", "type": "job_finished"}
+{"kernel": "i003-main", "status": "numerical_error", "t": 1793997977.739017, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 3, "selected": null, "t": 1793997977.739151, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"epoch": 4, "iteration": 4, "t": 1793997977.746942, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 4, "t": 1793997977.752481, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 4, "t": 1793997984.812995, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 4, "t": 1793997990.939398, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 4, "t": 1793997997.174217, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998003.097334, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998008.868919, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998014.88497, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998020.327541, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998025.859421, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998031.493684, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998037.587188, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998043.141238, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998048.059911, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998053.198044, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998058.79647, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998064.680007, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998071.419057, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998077.582406, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998082.928111, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998088.458384, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998094.019736, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998099.833908, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998105.923186, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998111.98206, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998117.965394, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998123.496427, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998129.020117, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998133.849564, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998139.827742, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998144.696529, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998150.072188, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998155.133122, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998160.485008, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998165.992664, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998171.511758, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998176.817174, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998182.251232, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998187.822592, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998193.048508, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998198.88433, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998204.234701, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998210.393221, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998216.4805, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998222.076638, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998227.708145, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998233.321255, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998239.274511, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998245.141687, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998249.995297, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998254.224789, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998260.029448, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998265.191774, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998271.00459, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998276.005682, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998281.733645, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998287.899468, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998293.222414, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998298.455556, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998302.011864, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998306.379877, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998310.247499, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998315.45109, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998321.482011, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998327.28232, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998333.800705, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998339.955673, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998346.261122, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998351.497681, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998355.593521, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998360.589937, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998364.010089, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998367.044905, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998371.564893, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998377.184397, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998381.326269, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"iteration": 4, "t": 1793998386.849719, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"content_tokens": 4794, "finish_reason": "stop", "iteration": 4, "ok": true, "reasoning_tokens": 75216, "seconds": 424.54, "t": 1793998402.296971, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 4, "kind": "build", "label": "level3/1_MLP/i004-main/build", "t": 1793998402.307723, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i004-main/build", "slot": "builder:cpu#0", "t": 1793998402.307893, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i004-main/build", "outcome": "done", "seconds": 3.648, "slot": "builder:cpu#0", "t": 1793998405.956269, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 4, "kind": "validate", "label": "level3/1_MLP/i004-main/validate", "t": 1793998405.963416, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i004-main/validate", "slot": "validator:2#0", "t": 1793998405.963479, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i004-main/validate", "outcome": "done", "seconds": 25.033, "slot": "validator:2#0", "t": 1793998430.996931, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 4, "kind": "benchmark", "label": "level3/1_MLP/i004-main/benchmark", "t": 1793998431.001409, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i004-main/benchmark", "slot": "profiler:3#0", "t": 1793998431.001469, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i004-main/benchmark", "outcome": "done", "seconds": 12.052, "slot": "profiler:3#0", "t": 1793998443.053327, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 4, "kernel": "i004-main", "source": "main", "speedup": 5.462693617825789, "t": 1793998443.063341, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 4, "kind": "ncu", "label": "level3/1_MLP/i004-main/ncu", "t": 1793998443.064132, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i004-main/ncu", "slot": "profiler:3#0", "t": 1793998443.064198, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i004-main", "status": "success", "t": 1793998443.073003, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 4, "selected": "i004-main", "t": 1793998443.074018, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i004-main/ncu", "outcome": "done", "seconds": 42.563, "slot": "profiler:3#0", "t": 1793998485.627579, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 4, "kernel": "i004-main", "kernels": 3, "ncu_s": 42.361, "ok": true, "rules": 30, "selection": "nvtx", "status": "success", "t": 1793998485.639952, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 5, "seconds": 42.566, "t": 1793998485.64009, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 5, "iteration": 5, "t": 1793998485.650795, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 5, "t": 1793998485.656694, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 5, "t": 1793998493.291941, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998500.115444, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998506.123932, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998512.124533, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998518.966597, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998525.386732, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998531.169872, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998537.247458, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998543.729182, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998550.85821, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998557.461381, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998563.888306, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998570.081825, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998575.863845, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998581.801515, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998588.089607, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998593.893709, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998599.78647, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998606.882299, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998613.161156, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998619.806624, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998626.323748, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998632.331479, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998637.689769, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998644.956863, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998651.207516, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998657.551556, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998663.680449, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998668.842206, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998673.577484, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998678.370426, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998684.13404, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998690.852241, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998696.97728, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998703.298377, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998709.701283, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998715.120185, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998720.815518, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998727.000268, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998731.385417, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998736.182705, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998741.028596, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998747.411399, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998753.596729, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998759.028553, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998764.826653, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998770.457707, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998775.676759, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998780.006687, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998783.913844, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998789.749601, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998795.22356, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998800.994613, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998804.790285, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998808.489922, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998813.594532, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998819.025153, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998824.251852, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998828.275317, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998831.489272, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998834.465461, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998839.085636, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998844.896801, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 5, "t": 1793998850.555066, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"content_tokens": 6782, "finish_reason": "stop", "iteration": 5, "ok": true, "reasoning_tokens": 64376, "seconds": 388.217, "t": 1793998873.877429, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 5, "kind": "build", "label": "level3/1_MLP/i005-main/build", "t": 1793998873.893106, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i005-main/build", "slot": "builder:cpu#0", "t": 1793998873.893242, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i005-main/build", "outcome": "done", "seconds": 2.834, "slot": "builder:cpu#0", "t": 1793998876.726999, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 5, "kind": "validate", "label": "level3/1_MLP/i005-main/validate", "t": 1793998876.73678, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i005-main/validate", "slot": "validator:2#0", "t": 1793998876.736844, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i005-main/validate", "outcome": "done", "seconds": 28.594, "slot": "validator:2#0", "t": 1793998905.331281, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 5, "kind": "benchmark", "label": "level3/1_MLP/i005-main/benchmark", "t": 1793998905.338687, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i005-main/benchmark", "slot": "profiler:3#0", "t": 1793998905.338743, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i005-main/benchmark", "outcome": "done", "seconds": 11.742, "slot": "profiler:3#0", "t": 1793998917.080307, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 5, "kernel": "i005-main", "source": "main", "speedup": 3.8667168547729993, "t": 1793998917.086221, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 5, "kind": "ncu", "label": "level3/1_MLP/i005-main/ncu", "t": 1793998917.087035, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i005-main/ncu", "slot": "profiler:3#0", "t": 1793998917.087085, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i005-main", "status": "success", "t": 1793998917.091235, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 5, "selected": "i005-main", "t": 1793998917.09137, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i005-main/ncu", "outcome": "done", "seconds": 44.547, "slot": "profiler:3#0", "t": 1793998961.634616, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 5, "kernel": "i005-main", "kernels": 2, "ncu_s": 44.31, "ok": true, "rules": 20, "selection": "nvtx", "status": "success", "t": 1793998961.648231, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 6, "seconds": 44.555, "t": 1793998961.64836, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 6, "iteration": 6, "t": 1793998961.656765, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 6, "t": 1793998961.662902, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 6, "t": 1793998969.103838, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 6, "t": 1793998975.492794, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 6, "t": 1793998981.91233, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 6, "t": 1793998988.217766, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 6, "t": 1793998994.864394, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999001.450238, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999008.575459, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999015.12898, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999021.843532, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999028.854037, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999034.782676, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999040.875411, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999046.769908, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999053.056993, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999059.622735, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999065.801164, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999072.165775, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999078.869979, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999085.378696, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999092.209606, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999098.702579, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999104.91751, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999111.306985, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999117.907268, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999123.946721, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999129.684, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999134.851933, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999140.946108, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999147.26392, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999153.601744, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999160.640492, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999167.017351, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999172.940593, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999179.003107, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999184.634566, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999190.238669, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999196.323185, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999201.114752, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999207.46201, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999211.670368, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999217.062539, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999222.808029, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999228.897727, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999235.306856, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999240.953097, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999244.46972, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999247.746108, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999251.562492, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999256.158608, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999261.004724, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999265.812321, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999271.012603, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999277.140535, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999282.70746, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999288.228201, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999294.092999, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999299.919515, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999305.762138, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999311.020782, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999314.27283, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999318.651345, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999322.813545, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999327.947812, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999330.809844, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999334.957017, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999340.770969, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999345.699568, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 6, "t": 1793999350.905006, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"content_tokens": 6057, "finish_reason": "stop", "iteration": 6, "ok": true, "reasoning_tokens": 68379, "seconds": 410.015, "t": 1793999371.681197, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 6, "kind": "build", "label": "level3/1_MLP/i006-main/build", "t": 1793999371.690563, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i006-main/build", "slot": "builder:cpu#0", "t": 1793999371.690669, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i006-main/build", "outcome": "done", "seconds": 2.669, "slot": "builder:cpu#0", "t": 1793999374.359794, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 6, "kind": "validate", "label": "level3/1_MLP/i006-main/validate", "t": 1793999374.366358, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i006-main/validate", "slot": "validator:2#0", "t": 1793999374.366423, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i006-main/validate", "outcome": "done", "seconds": 26.359, "slot": "validator:2#0", "t": 1793999400.725808, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 6, "kind": "benchmark", "label": "level3/1_MLP/i006-main/benchmark", "t": 1793999400.731513, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i006-main/benchmark", "slot": "profiler:3#0", "t": 1793999400.731574, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i006-main/benchmark", "outcome": "done", "seconds": 11.056, "slot": "profiler:3#0", "t": 1793999411.787491, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 6, "kernel": "i006-main", "source": "main", "speedup": 5.4773253851301025, "t": 1793999411.794064, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 6, "kind": "ncu", "label": "level3/1_MLP/i006-main/ncu", "t": 1793999411.795053, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i006-main/ncu", "slot": "profiler:3#0", "t": 1793999411.795099, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i006-main", "status": "success", "t": 1793999411.799539, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 6, "selected": "i006-main", "t": 1793999411.799644, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i006-main/ncu", "outcome": "done", "seconds": 47.628, "slot": "profiler:3#0", "t": 1793999459.423159, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 6, "kernel": "i006-main", "kernels": 3, "ncu_s": 47.446, "ok": true, "rules": 29, "selection": "nvtx", "status": "success", "t": 1793999459.435709, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 7, "seconds": 47.613, "t": 1793999459.435857, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 7, "iteration": 7, "t": 1793999459.445495, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 7, "t": 1793999459.45521, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 7, "t": 1793999467.230184, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999474.040351, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999480.823032, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999486.738518, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999492.908157, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999499.764784, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999505.458354, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999511.76968, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999516.950475, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999523.100842, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999529.300235, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999535.943591, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999542.3437, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999548.903977, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999554.853962, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999561.271649, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999566.863966, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999573.232516, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999579.476256, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999585.744694, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999591.24109, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999597.784329, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999603.982433, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999610.625591, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999616.968526, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999623.941746, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999629.257587, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999633.5202, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999637.770284, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999644.083112, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999650.050864, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999656.34551, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999661.926058, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999668.407112, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999674.563296, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999680.227736, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999685.979692, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999691.64907, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999697.262025, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999703.133101, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999709.18617, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999714.86762, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999720.664773, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999726.675825, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999732.425022, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999738.426902, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999744.749368, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999751.367179, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999755.335964, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999761.69532, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999767.815306, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999772.958712, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999779.201436, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999785.681775, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999792.417995, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999799.038439, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999804.050332, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999809.621906, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999815.754066, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999820.254936, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999826.097951, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999832.420206, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999838.659808, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999845.118106, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999849.450762, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999854.763516, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999860.626232, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999865.932685, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999869.969411, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999873.429988, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999876.941061, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999881.308788, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999885.333223, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999890.16654, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999896.573587, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999902.687457, "task": "level3/1_MLP", "tokens": 76000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999908.248408, "task": "level3/1_MLP", "tokens": 77000, "type": "main_progress"}
+{"iteration": 7, "t": 1793999912.792844, "task": "level3/1_MLP", "tokens": 78000, "type": "main_progress"}
+{"content_tokens": 7455, "finish_reason": "stop", "iteration": 7, "ok": true, "reasoning_tokens": 78882, "seconds": 482.023, "t": 1793999941.482122, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 7, "kind": "build", "label": "level3/1_MLP/i007-main/build", "t": 1793999941.497263, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i007-main/build", "slot": "builder:cpu#0", "t": 1793999941.497424, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i007-main/build", "outcome": "done", "seconds": 2.648, "slot": "builder:cpu#0", "t": 1793999944.145285, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 7, "kind": "validate", "label": "level3/1_MLP/i007-main/validate", "t": 1793999944.149567, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i007-main/validate", "slot": "validator:2#0", "t": 1793999944.149628, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i007-main/validate", "outcome": "done", "seconds": 28.104, "slot": "validator:2#0", "t": 1793999972.253775, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 7, "kind": "benchmark", "label": "level3/1_MLP/i007-main/benchmark", "t": 1793999972.259095, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i007-main/benchmark", "slot": "profiler:3#0", "t": 1793999972.259175, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i007-main/benchmark", "outcome": "done", "seconds": 12.48, "slot": "profiler:3#0", "t": 1793999984.739656, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 7, "kernel": "i007-main", "source": "main", "speedup": 0.8333349534849253, "t": 1793999984.744967, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 7, "kind": "ncu", "label": "level3/1_MLP/i007-main/ncu", "t": 1793999984.746282, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i007-main/ncu", "slot": "profiler:3#0", "t": 1793999984.746335, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i007-main", "status": "success", "t": 1793999984.750444, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 7, "selected": "i007-main", "t": 1793999984.750591, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i007-main/ncu", "outcome": "done", "seconds": 55.983, "slot": "profiler:3#0", "t": 1794000040.729376, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 7, "kernel": "i007-main", "kernels": 3, "ncu_s": 55.771, "ok": true, "rules": 32, "selection": "nvtx", "status": "success", "t": 1794000040.739149, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 8, "seconds": 55.988, "t": 1794000040.739289, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 8, "iteration": 8, "t": 1794000040.745728, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 8, "t": 1794000041.036105, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 8, "t": 1794000047.801391, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000053.802275, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000060.218472, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000065.632329, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000072.196307, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000078.729803, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000084.701391, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000090.363067, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000096.658566, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000102.431674, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000108.716248, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000114.697511, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000119.867894, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000125.697812, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000131.619469, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000135.369611, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000141.32075, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000147.442025, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000153.112057, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000158.881176, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000163.761428, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000168.666284, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000171.767849, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000176.13965, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000179.450675, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000184.562185, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000190.557073, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000196.992077, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000202.983864, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000208.748862, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000213.649023, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 8, "t": 1794000219.480815, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"content_tokens": 6239, "finish_reason": "stop", "iteration": 8, "ok": true, "reasoning_tokens": 32179, "seconds": 198.872, "t": 1794000239.909887, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 8, "kind": "build", "label": "level3/1_MLP/i008-main/build", "t": 1794000239.925442, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i008-main/build", "slot": "builder:cpu#0", "t": 1794000239.925552, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i008-main/build", "outcome": "done", "seconds": 3.24, "slot": "builder:cpu#0", "t": 1794000243.16554, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 8, "kind": "validate", "label": "level3/1_MLP/i008-main/validate", "t": 1794000243.17092, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i008-main/validate", "slot": "validator:2#0", "t": 1794000243.170982, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i008-main/validate", "outcome": "done", "seconds": 30.707, "slot": "validator:2#0", "t": 1794000273.877922, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 8, "kind": "benchmark", "label": "level3/1_MLP/i008-main/benchmark", "t": 1794000273.885536, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i008-main/benchmark", "slot": "profiler:3#0", "t": 1794000273.885595, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i008-main/benchmark", "outcome": "done", "seconds": 11.725, "slot": "profiler:3#0", "t": 1794000285.610601, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 8, "kernel": "i008-main", "source": "main", "speedup": 5.1138560719339266, "t": 1794000285.621292, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 8, "kind": "ncu", "label": "level3/1_MLP/i008-main/ncu", "t": 1794000285.622317, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i008-main/ncu", "slot": "profiler:3#0", "t": 1794000285.622363, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i008-main", "status": "success", "t": 1794000285.630221, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 8, "selected": "i008-main", "t": 1794000285.630334, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i008-main/ncu", "outcome": "done", "seconds": 39.544, "slot": "profiler:3#0", "t": 1794000325.166622, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 8, "kernel": "i008-main", "kernels": 3, "ncu_s": 39.349, "ok": true, "rules": 28, "selection": "nvtx", "status": "success", "t": 1794000325.176377, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 9, "seconds": 39.546, "t": 1794000325.176524, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 9, "iteration": 9, "t": 1794000325.184392, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 9, "t": 1794000325.192147, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 9, "t": 1794000332.125692, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000337.981069, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000344.858466, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000351.188556, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000357.848174, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000363.807738, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000370.105773, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000376.372082, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000382.728047, "task": "level3/1_MLP", "tokens": 9001, "type": "main_progress"}
+{"iteration": 9, "t": 1794000388.808923, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000394.328258, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000400.271639, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000406.868954, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000412.674112, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000418.726114, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000424.850548, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000430.88213, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000437.179207, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000443.295374, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000450.12613, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000456.646375, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000462.88859, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000468.974457, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000475.486932, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000482.242661, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000488.448911, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000495.07135, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000501.423042, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000507.898553, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000514.613278, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000520.403461, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000526.089498, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000532.606809, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000537.795325, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000543.884048, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000548.769047, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000555.273511, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000561.075697, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000567.163324, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000573.523164, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000579.123809, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000585.057001, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000590.965032, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000596.240396, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000600.979435, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000606.772757, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000613.36137, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000618.039403, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000622.754636, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000627.516767, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000632.725836, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000638.956268, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000645.043632, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000650.047713, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000654.097453, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000658.30428, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000662.952499, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000667.110598, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000672.149261, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000677.557295, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000683.58162, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000689.704453, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000694.315298, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000698.059826, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000701.652043, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000706.645025, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000711.693049, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000716.779388, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000722.043939, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000728.089955, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 9, "t": 1794000733.294511, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"content_tokens": 6310, "finish_reason": "stop", "iteration": 9, "ok": true, "reasoning_tokens": 71313, "seconds": 429.816, "t": 1794000755.010912, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 9, "kind": "build", "label": "level3/1_MLP/i009-main/build", "t": 1794000755.031219, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i009-main/build", "slot": "builder:cpu#0", "t": 1794000755.031351, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i009-main/build", "outcome": "done", "seconds": 2.483, "slot": "builder:cpu#0", "t": 1794000757.513939, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 9, "kind": "validate", "label": "level3/1_MLP/i009-main/validate", "t": 1794000757.523454, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i009-main/validate", "slot": "validator:2#0", "t": 1794000757.52352, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i009-main/validate", "outcome": "done", "seconds": 600.447, "slot": "validator:2#0", "t": 1794001357.970925, "task": "level3/1_MLP", "type": "job_finished"}
+{"kernel": "i009-main", "status": "timeout", "t": 1794001357.978458, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 9, "selected": null, "t": 1794001357.98016, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"epoch": 10, "iteration": 10, "t": 1794001357.990775, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 10, "t": 1794001357.997185, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 10, "t": 1794001365.981164, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001372.490655, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001378.743309, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001385.488717, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001391.967045, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001398.415049, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001404.27303, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001411.065729, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001417.997562, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001424.359062, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001430.284913, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001436.776497, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001443.108487, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001449.364929, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001455.388197, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001461.844726, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001468.353399, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001475.037868, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001481.568563, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001487.550869, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001493.835426, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001500.034987, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001506.465725, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001511.211239, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001518.05538, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001525.099359, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001531.257195, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001536.976112, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001542.483911, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001548.38173, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001552.233467, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001556.411155, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001561.426066, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 10, "t": 1794001566.783121, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"content_tokens": 5824, "finish_reason": "stop", "iteration": 10, "ok": true, "reasoning_tokens": 34922, "seconds": 231.76, "t": 1794001589.758243, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 10, "kind": "build", "label": "level3/1_MLP/i010-main/build", "t": 1794001589.778701, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i010-main/build", "slot": "builder:cpu#0", "t": 1794001589.778774, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i010-main/build", "outcome": "done", "seconds": 2.722, "slot": "builder:cpu#0", "t": 1794001592.501066, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 10, "kind": "validate", "label": "level3/1_MLP/i010-main/validate", "t": 1794001592.503988, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i010-main/validate", "slot": "validator:2#0", "t": 1794001592.504043, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i010-main/validate", "outcome": "done", "seconds": 28.479, "slot": "validator:2#0", "t": 1794001620.983184, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 10, "kind": "benchmark", "label": "level3/1_MLP/i010-main/benchmark", "t": 1794001620.985582, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i010-main/benchmark", "slot": "profiler:3#0", "t": 1794001620.985641, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i010-main/benchmark", "outcome": "done", "seconds": 11.946, "slot": "profiler:3#0", "t": 1794001632.931581, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 10, "kernel": "i010-main", "source": "main", "speedup": 4.9635939793856645, "t": 1794001632.936862, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 10, "kind": "ncu", "label": "level3/1_MLP/i010-main/ncu", "t": 1794001632.937942, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i010-main/ncu", "slot": "profiler:3#0", "t": 1794001632.937995, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i010-main", "status": "success", "t": 1794001632.942293, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 10, "selected": "i010-main", "t": 1794001632.943572, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i010-main/ncu", "outcome": "done", "seconds": 44.05, "slot": "profiler:3#0", "t": 1794001676.988207, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 10, "kernel": "i010-main", "kernels": 3, "ncu_s": 43.836, "ok": true, "rules": 29, "selection": "nvtx", "status": "success", "t": 1794001676.997117, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 11, "seconds": 44.052, "t": 1794001676.997301, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 11, "iteration": 11, "t": 1794001677.007354, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 11, "t": 1794001677.017568, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 11, "t": 1794001683.377431, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001689.22846, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001695.129292, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001701.303832, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001706.945126, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001712.88797, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001718.84438, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001724.991636, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001731.00804, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001737.259982, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001742.994146, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001748.941589, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001754.791846, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001760.706759, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001767.413388, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001772.54008, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001778.112679, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001783.364214, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001789.305751, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001794.829399, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001800.317336, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001806.753905, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001812.561996, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001818.6263, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001824.625419, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001829.873207, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001835.212024, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001840.865301, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001846.384001, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001851.681619, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001857.421234, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001862.9228, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001868.564566, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001874.668847, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001880.27641, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001885.648798, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001891.721417, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001897.550409, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001903.299939, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001908.697505, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001914.245512, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001919.497337, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001924.821222, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001930.702821, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001935.522811, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001941.257491, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001947.297472, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001953.361088, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001959.536657, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001965.065983, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001970.510643, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001974.652401, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001978.946087, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001984.305145, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001990.212981, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001994.72803, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 11, "t": 1794001999.077259, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002004.348956, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002008.490515, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002012.500127, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002017.824162, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002021.835613, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002025.65836, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002031.061131, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002036.151953, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002041.342883, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002045.415476, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002050.140159, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002055.803758, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002061.339887, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002066.895794, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 11, "t": 1794002072.244185, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"content_tokens": 6801, "finish_reason": "stop", "iteration": 11, "ok": true, "reasoning_tokens": 72276, "seconds": 417.437, "t": 1794002094.458244, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 11, "kind": "build", "label": "level3/1_MLP/i011-main/build", "t": 1794002094.474958, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i011-main/build", "slot": "builder:cpu#0", "t": 1794002094.475087, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i011-main/build", "outcome": "done", "seconds": 2.703, "slot": "builder:cpu#0", "t": 1794002097.178415, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 11, "kind": "validate", "label": "level3/1_MLP/i011-main/validate", "t": 1794002097.186283, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i011-main/validate", "slot": "validator:2#0", "t": 1794002097.186344, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i011-main/validate", "outcome": "done", "seconds": 28.136, "slot": "validator:2#0", "t": 1794002125.322017, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 11, "kind": "benchmark", "label": "level3/1_MLP/i011-main/benchmark", "t": 1794002125.326894, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i011-main/benchmark", "slot": "profiler:3#0", "t": 1794002125.32695, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i011-main/benchmark", "outcome": "done", "seconds": 11.801, "slot": "profiler:3#0", "t": 1794002137.128392, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 11, "kernel": "i011-main", "source": "main", "speedup": 6.039116417339992, "t": 1794002137.138317, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 11, "kind": "ncu", "label": "level3/1_MLP/i011-main/ncu", "t": 1794002137.139408, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i011-main/ncu", "slot": "profiler:3#0", "t": 1794002137.139458, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i011-main", "status": "success", "t": 1794002137.14399, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 11, "selected": "i011-main", "t": 1794002137.144191, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i011-main/ncu", "outcome": "done", "seconds": 37.767, "slot": "profiler:3#0", "t": 1794002174.906942, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 11, "kernel": "i011-main", "kernels": 4, "ncu_s": 37.564, "ok": true, "rules": 37, "selection": "nvtx", "status": "success", "t": 1794002174.920919, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 12, "seconds": 37.777, "t": 1794002174.921038, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 12, "iteration": 12, "t": 1794002174.931985, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 12, "t": 1794002174.940972, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 12, "t": 1794002181.950618, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002188.482749, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002195.092101, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002200.946809, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002207.2229, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002213.181204, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002219.771775, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002226.027866, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002232.696846, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002239.426665, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002246.340306, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002252.637057, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002258.72573, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002264.410728, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002270.134366, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002275.901931, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002282.164958, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002287.420822, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002293.065289, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002299.023813, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002305.001735, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002311.151777, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002315.892873, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002321.859398, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002328.456561, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002333.978381, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002339.873996, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002345.356331, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002351.188642, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002356.817096, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002362.82004, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002368.970756, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002375.31416, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002379.935896, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002382.991971, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002386.148504, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002392.268342, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002397.953326, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002403.846684, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002410.378712, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002416.410066, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002422.238825, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002427.232152, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002433.300658, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002439.266209, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 12, "t": 1794002444.551675, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"content_tokens": 6933, "finish_reason": "stop", "iteration": 12, "ok": true, "reasoning_tokens": 46494, "seconds": 293.094, "t": 1794002468.037852, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 12, "kind": "build", "label": "level3/1_MLP/i012-main/build", "t": 1794002468.054164, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i012-main/build", "slot": "builder:cpu#0", "t": 1794002468.05429, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i012-main/build", "outcome": "done", "seconds": 2.887, "slot": "builder:cpu#0", "t": 1794002470.941709, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 12, "kind": "validate", "label": "level3/1_MLP/i012-main/validate", "t": 1794002470.947035, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i012-main/validate", "slot": "validator:2#0", "t": 1794002470.947096, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i012-main/validate", "outcome": "done", "seconds": 27.115, "slot": "validator:2#0", "t": 1794002498.062218, "task": "level3/1_MLP", "type": "job_finished"}
+{"kernel": "i012-main", "status": "numerical_error", "t": 1794002498.070503, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 12, "selected": null, "t": 1794002498.070641, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"epoch": 13, "iteration": 13, "t": 1794002498.083109, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 13, "t": 1794002498.092162, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 13, "t": 1794002505.604103, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002510.634375, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002516.232813, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002521.861927, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002527.54319, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002533.744397, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002539.450419, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002545.028248, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002551.007965, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002556.971261, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002563.092312, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002568.629503, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002574.472389, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002579.999706, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002585.299841, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002591.13168, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002596.863036, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002601.743073, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002607.631117, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002612.891717, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002618.764438, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002624.382563, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002629.922595, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002635.633528, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002640.925222, "task": "level3/1_MLP", "tokens": 25001, "type": "main_progress"}
+{"iteration": 13, "t": 1794002646.755166, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002652.389629, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002658.155163, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002664.101451, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002669.499343, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002673.038081, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002678.684051, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002684.389374, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 13, "t": 1794002689.96382, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"content_tokens": 6773, "finish_reason": "stop", "iteration": 13, "ok": true, "reasoning_tokens": 34025, "seconds": 212.24, "t": 1794002710.333412, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 13, "kind": "build", "label": "level3/1_MLP/i013-main/build", "t": 1794002710.352019, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i013-main/build", "slot": "builder:cpu#0", "t": 1794002710.352112, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i013-main/build", "outcome": "done", "seconds": 2.67, "slot": "builder:cpu#0", "t": 1794002713.022041, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 13, "kind": "validate", "label": "level3/1_MLP/i013-main/validate", "t": 1794002713.030362, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i013-main/validate", "slot": "validator:2#0", "t": 1794002713.030424, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i013-main/validate", "outcome": "done", "seconds": 29.396, "slot": "validator:2#0", "t": 1794002742.426183, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 13, "kind": "benchmark", "label": "level3/1_MLP/i013-main/benchmark", "t": 1794002742.433784, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i013-main/benchmark", "slot": "profiler:3#0", "t": 1794002742.433854, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i013-main/benchmark", "outcome": "done", "seconds": 12.116, "slot": "profiler:3#0", "t": 1794002754.550053, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 13, "kernel": "i013-main", "source": "main", "speedup": 5.758990838523524, "t": 1794002754.557391, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 13, "kind": "ncu", "label": "level3/1_MLP/i013-main/ncu", "t": 1794002754.55847, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i013-main/ncu", "slot": "profiler:3#0", "t": 1794002754.55852, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i013-main", "status": "success", "t": 1794002754.562658, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 13, "selected": "i013-main", "t": 1794002754.562841, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i013-main/ncu", "outcome": "done", "seconds": 48.214, "slot": "profiler:3#0", "t": 1794002802.772969, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 13, "kernel": "i013-main", "kernels": 4, "ncu_s": 48.02, "ok": true, "rules": 37, "selection": "nvtx", "status": "success", "t": 1794002802.786379, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 14, "seconds": 48.224, "t": 1794002802.78652, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 14, "iteration": 14, "t": 1794002802.802633, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 14, "t": 1794002802.811695, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 14, "t": 1794002809.547675, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002815.491304, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002821.468679, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002827.101424, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002833.2058, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002838.987336, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002845.128488, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002851.501647, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002857.225577, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002862.903206, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002868.91422, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002874.396409, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002879.966998, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002885.750912, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002891.97314, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002898.064666, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002903.273211, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002909.192488, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002915.235178, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002920.708567, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002926.864047, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002933.049802, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002938.119433, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002943.196707, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002949.390177, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002955.538189, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002961.161012, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002966.71697, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002972.499572, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002978.523983, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002983.973474, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002989.971408, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 14, "t": 1794002996.794788, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003002.866007, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003007.835068, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003013.570798, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003019.109051, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003024.560281, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003030.332371, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003036.626483, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003043.082801, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003049.307622, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003055.174273, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003061.400718, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003067.013227, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003073.409019, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003078.246565, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003083.761492, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003089.920934, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003096.156338, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003102.607954, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003109.081512, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003115.264116, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003121.56906, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003125.494106, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003129.126745, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003132.9633, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003138.528885, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003144.32716, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003150.556003, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003156.633509, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003162.462497, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 14, "t": 1794003167.36889, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"content_tokens": 6968, "finish_reason": "stop", "iteration": 14, "ok": true, "reasoning_tokens": 63201, "seconds": 386.731, "t": 1794003189.545352, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 14, "kind": "build", "label": "level3/1_MLP/i014-main/build", "t": 1794003189.559564, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i014-main/build", "slot": "builder:cpu#0", "t": 1794003189.559671, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i014-main/build", "outcome": "done", "seconds": 2.285, "slot": "builder:cpu#0", "t": 1794003191.84513, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 14, "kind": "validate", "label": "level3/1_MLP/i014-main/validate", "t": 1794003191.851555, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i014-main/validate", "slot": "validator:2#0", "t": 1794003191.851615, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i014-main/validate", "outcome": "done", "seconds": 24.287, "slot": "validator:2#0", "t": 1794003216.138759, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 14, "kind": "benchmark", "label": "level3/1_MLP/i014-main/benchmark", "t": 1794003216.147402, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i014-main/benchmark", "slot": "profiler:3#0", "t": 1794003216.147515, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i014-main/benchmark", "outcome": "done", "seconds": 11.117, "slot": "profiler:3#0", "t": 1794003227.264771, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 14, "kernel": "i014-main", "source": "main", "speedup": 6.419884558584204, "t": 1794003227.271734, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 14, "kind": "ncu", "label": "level3/1_MLP/i014-main/ncu", "t": 1794003227.272783, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i014-main/ncu", "slot": "profiler:3#0", "t": 1794003227.27283, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i014-main", "status": "success", "t": 1794003227.276768, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 14, "selected": "i014-main", "t": 1794003227.276897, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i014-main/ncu", "outcome": "done", "seconds": 41.793, "slot": "profiler:3#0", "t": 1794003269.066091, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 14, "kernel": "i014-main", "kernels": 4, "ncu_s": 41.608, "ok": true, "rules": 37, "selection": "nvtx", "status": "success", "t": 1794003269.079499, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 15, "seconds": 41.786, "t": 1794003269.079635, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 15, "iteration": 15, "t": 1794003269.099283, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 15, "t": 1794003269.107413, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 15, "t": 1794003275.616686, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003280.966513, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003286.573791, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003292.613233, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003298.44658, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003304.182533, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003309.880749, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003315.773437, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003321.342841, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003327.176019, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003333.080434, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003337.507456, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003341.914203, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003347.509993, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003354.400061, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003359.382557, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003365.611553, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003370.989145, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003376.460555, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003382.393078, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003388.065444, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003393.799447, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003399.869205, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003405.511552, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003410.963839, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003416.394197, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003421.866498, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003427.765164, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003433.479628, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003439.168863, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003445.295107, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003451.359005, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003456.730574, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003462.291731, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003468.020467, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003473.935082, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003479.185474, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003484.271856, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003489.586619, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003494.995794, "task": "level3/1_MLP", "tokens": 40001, "type": "main_progress"}
+{"iteration": 15, "t": 1794003500.63072, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003505.932465, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003511.49529, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003517.301512, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003522.936385, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003529.008734, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003534.872446, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003540.529977, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003545.95704, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003551.795354, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003557.275334, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003562.695558, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003567.938995, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003572.797132, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003577.755272, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003583.282363, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003588.731654, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003594.494605, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003600.614802, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003606.272658, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003611.863734, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003617.389371, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003622.728435, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003628.712767, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003634.486732, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003639.767121, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003645.669631, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003651.369015, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003655.812366, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003660.951563, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003666.509606, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003670.049738, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003673.838103, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003678.89945, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003683.918619, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003689.714163, "task": "level3/1_MLP", "tokens": 76000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003695.11996, "task": "level3/1_MLP", "tokens": 77000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003700.000928, "task": "level3/1_MLP", "tokens": 78000, "type": "main_progress"}
+{"iteration": 15, "t": 1794003704.505747, "task": "level3/1_MLP", "tokens": 79000, "type": "main_progress"}
+{"content_tokens": 7484, "finish_reason": "stop", "iteration": 15, "ok": true, "reasoning_tokens": 79493, "seconds": 460.768, "t": 1794003729.87913, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 15, "kind": "build", "label": "level3/1_MLP/i015-main/build", "t": 1794003729.892768, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i015-main/build", "slot": "builder:cpu#0", "t": 1794003729.892903, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i015-main/build", "outcome": "done", "seconds": 2.581, "slot": "builder:cpu#0", "t": 1794003732.473534, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 15, "kind": "validate", "label": "level3/1_MLP/i015-main/validate", "t": 1794003732.481387, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i015-main/validate", "slot": "validator:2#0", "t": 1794003732.481444, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i015-main/validate", "outcome": "done", "seconds": 26.997, "slot": "validator:2#0", "t": 1794003759.478952, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 15, "kind": "benchmark", "label": "level3/1_MLP/i015-main/benchmark", "t": 1794003759.488593, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i015-main/benchmark", "slot": "profiler:3#0", "t": 1794003759.488653, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i015-main/benchmark", "outcome": "done", "seconds": 12.672, "slot": "profiler:3#0", "t": 1794003772.160743, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 15, "kernel": "i015-main", "source": "main", "speedup": 5.706049589453408, "t": 1794003772.165576, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 15, "kind": "ncu", "label": "level3/1_MLP/i015-main/ncu", "t": 1794003772.166742, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i015-main/ncu", "slot": "profiler:3#0", "t": 1794003772.166786, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i015-main", "status": "success", "t": 1794003772.170281, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 15, "selected": "i015-main", "t": 1794003772.170409, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i015-main/ncu", "outcome": "done", "seconds": 39.711, "slot": "profiler:3#0", "t": 1794003811.87802, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 15, "kernel": "i015-main", "kernels": 4, "ncu_s": 39.54, "ok": true, "rules": 37, "selection": "nvtx", "status": "success", "t": 1794003811.889467, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 16, "seconds": 39.595, "t": 1794003811.889611, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 16, "iteration": 16, "t": 1794003811.899062, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 16, "t": 1794003811.904541, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 16, "t": 1794003818.607365, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003825.018714, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003831.151174, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003836.654074, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003842.326971, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003847.592368, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003853.68986, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003859.991432, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003866.33159, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003871.289425, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003876.420503, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003882.400967, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003888.280901, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003893.805624, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003900.356126, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003905.84044, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003911.699149, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003916.977687, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003922.969916, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003929.420251, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003935.173067, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003941.376328, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003947.04663, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003952.501483, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003958.061074, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003964.720726, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003971.460289, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003977.725739, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003983.632384, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003989.119347, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 16, "t": 1794003995.150163, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004001.054114, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004007.549617, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004011.974974, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004017.713499, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004023.455834, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004029.57885, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004035.970025, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004041.809324, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004046.914152, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004052.008352, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004057.802825, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004063.418166, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004069.370167, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004074.966429, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004080.283899, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004084.575336, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004090.648355, "task": "level3/1_MLP", "tokens": 48001, "type": "main_progress"}
+{"iteration": 16, "t": 1794004096.370117, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004102.89562, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004108.650002, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004114.20037, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004120.16919, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004126.103992, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004130.550599, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004134.035576, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004139.935255, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004145.845872, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004151.924754, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004157.712953, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004163.588546, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004169.191382, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004174.243736, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004179.77653, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004184.632453, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004189.061255, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004194.042603, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004198.723585, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004204.568234, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004210.27719, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004214.484809, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004219.329918, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004222.321901, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 16, "t": 1794004226.091191, "task": "level3/1_MLP", "tokens": 74000, "type": "main_progress"}
+{"content_tokens": 7215, "finish_reason": "stop", "iteration": 16, "ok": true, "reasoning_tokens": 74759, "seconds": 440.137, "t": 1794004252.044527, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 16, "kind": "build", "label": "level3/1_MLP/i016-main/build", "t": 1794004252.065178, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i016-main/build", "slot": "builder:cpu#0", "t": 1794004252.065274, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i016-main/build", "outcome": "done", "seconds": 2.593, "slot": "builder:cpu#0", "t": 1794004254.657897, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 16, "kind": "validate", "label": "level3/1_MLP/i016-main/validate", "t": 1794004254.665168, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i016-main/validate", "slot": "validator:2#0", "t": 1794004254.665236, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i016-main/validate", "outcome": "done", "seconds": 24.434, "slot": "validator:2#0", "t": 1794004279.0995, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 16, "kind": "benchmark", "label": "level3/1_MLP/i016-main/benchmark", "t": 1794004279.110098, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i016-main/benchmark", "slot": "profiler:3#0", "t": 1794004279.11017, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i016-main/benchmark", "outcome": "done", "seconds": 11.048, "slot": "profiler:3#0", "t": 1794004290.157752, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 16, "kernel": "i016-main", "source": "main", "speedup": 6.506866595963551, "t": 1794004290.165564, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 16, "kind": "ncu", "label": "level3/1_MLP/i016-main/ncu", "t": 1794004290.166661, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i016-main/ncu", "slot": "profiler:3#0", "t": 1794004290.166706, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i016-main", "status": "success", "t": 1794004290.171628, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 16, "selected": "i016-main", "t": 1794004290.17262, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i016-main/ncu", "outcome": "done", "seconds": 32.026, "slot": "profiler:3#0", "t": 1794004322.192575, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 16, "kernel": "i016-main", "kernels": 4, "ncu_s": 31.848, "ok": true, "rules": 37, "selection": "nvtx", "status": "success", "t": 1794004322.205508, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 17, "seconds": 32.033, "t": 1794004322.205624, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 17, "iteration": 17, "t": 1794004322.218071, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 17, "t": 1794004322.224364, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 17, "t": 1794004329.92925, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004336.688524, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004343.432048, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004350.056612, "task": "level3/1_MLP", "tokens": 4001, "type": "main_progress"}
+{"iteration": 17, "t": 1794004356.524148, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004362.908584, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004369.552112, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004376.078556, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004383.27876, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004390.183655, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004396.940535, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004402.904955, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004409.045508, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004415.576798, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004422.225618, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004428.334079, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004435.053644, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004441.880284, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004448.329569, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004454.43203, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004460.464557, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004467.587882, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004473.707984, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004480.095721, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004486.946773, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004493.661505, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004499.826081, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004506.466319, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004513.164696, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004519.394997, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004525.466229, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004532.155045, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004536.683647, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004542.647758, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004548.860257, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004554.747575, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004561.980937, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004568.446856, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004574.704859, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004581.268593, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 17, "t": 1794004585.931183, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"content_tokens": 6891, "finish_reason": "stop", "iteration": 17, "ok": true, "reasoning_tokens": 41717, "seconds": 288.379, "t": 1794004610.605709, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 17, "kind": "build", "label": "level3/1_MLP/i017-main/build", "t": 1794004610.615788, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i017-main/build", "slot": "builder:cpu#0", "t": 1794004610.615881, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i017-main/build", "outcome": "done", "seconds": 2.466, "slot": "builder:cpu#0", "t": 1794004613.082191, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 17, "kind": "validate", "label": "level3/1_MLP/i017-main/validate", "t": 1794004613.093278, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i017-main/validate", "slot": "validator:2#0", "t": 1794004613.093338, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i017-main/validate", "outcome": "done", "seconds": 24.809, "slot": "validator:2#0", "t": 1794004637.902823, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 17, "kind": "benchmark", "label": "level3/1_MLP/i017-main/benchmark", "t": 1794004637.909823, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i017-main/benchmark", "slot": "profiler:3#0", "t": 1794004637.90988, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i017-main/benchmark", "outcome": "done", "seconds": 10.962, "slot": "profiler:3#0", "t": 1794004648.872331, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 17, "kernel": "i017-main", "source": "main", "speedup": 6.496915503203598, "t": 1794004648.880154, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 17, "kind": "ncu", "label": "level3/1_MLP/i017-main/ncu", "t": 1794004648.881869, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i017-main/ncu", "slot": "profiler:3#0", "t": 1794004648.881919, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i017-main", "status": "success", "t": 1794004648.923256, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 17, "selected": "i017-main", "t": 1794004648.923546, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i017-main/ncu", "outcome": "done", "seconds": 34.689, "slot": "profiler:3#0", "t": 1794004683.570899, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 17, "kernel": "i017-main", "kernels": 4, "ncu_s": 34.502, "ok": true, "rules": 38, "selection": "nvtx", "status": "success", "t": 1794004683.586718, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 18, "seconds": 34.661, "t": 1794004683.586855, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"epoch": 18, "iteration": 18, "t": 1794004683.599465, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 18, "t": 1794004683.605113, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 18, "t": 1794004690.749174, "task": "level3/1_MLP", "tokens": 1001, "type": "main_progress"}
+{"iteration": 18, "t": 1794004695.900302, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004701.857257, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004707.131067, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004713.324005, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004718.29621, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004723.590714, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004728.782782, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004734.245365, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004739.853699, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004745.272592, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004750.326885, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004756.235976, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004761.520649, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004766.295987, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004771.120651, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004777.1044, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004783.025204, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004788.423636, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004794.591427, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004800.002254, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004805.247303, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004810.690995, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004817.267932, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004822.041127, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004827.493671, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004833.392624, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004838.913836, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004844.796898, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004850.442132, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004856.300066, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004861.013411, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004866.385625, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004872.536083, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004878.083023, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004883.758423, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004889.621911, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004895.120222, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004901.075762, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004906.841223, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004912.110629, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004918.371894, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004924.300336, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004930.522044, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004935.567935, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004940.962772, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004946.133884, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004952.011327, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004955.567869, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004960.584816, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004966.198086, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004971.821536, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004977.479856, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004982.518341, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004987.813856, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004993.104933, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 18, "t": 1794004998.673966, "task": "level3/1_MLP", "tokens": 57001, "type": "main_progress"}
+{"iteration": 18, "t": 1794005004.184249, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005009.913285, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005015.47521, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005020.707423, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005027.230859, "task": "level3/1_MLP", "tokens": 62000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005033.336493, "task": "level3/1_MLP", "tokens": 63000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005037.335149, "task": "level3/1_MLP", "tokens": 64000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005042.562971, "task": "level3/1_MLP", "tokens": 65000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005046.804647, "task": "level3/1_MLP", "tokens": 66000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005051.983883, "task": "level3/1_MLP", "tokens": 67000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005057.174679, "task": "level3/1_MLP", "tokens": 68000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005062.338933, "task": "level3/1_MLP", "tokens": 69000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005068.137654, "task": "level3/1_MLP", "tokens": 70000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005074.248972, "task": "level3/1_MLP", "tokens": 71000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005079.901, "task": "level3/1_MLP", "tokens": 72000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005085.057362, "task": "level3/1_MLP", "tokens": 73000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005089.237021, "task": "level3/1_MLP", "tokens": 74001, "type": "main_progress"}
+{"iteration": 18, "t": 1794005093.095599, "task": "level3/1_MLP", "tokens": 75000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005096.346538, "task": "level3/1_MLP", "tokens": 76000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005100.192827, "task": "level3/1_MLP", "tokens": 77000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005105.382084, "task": "level3/1_MLP", "tokens": 78000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005109.933144, "task": "level3/1_MLP", "tokens": 79000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005114.328174, "task": "level3/1_MLP", "tokens": 80000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005119.604793, "task": "level3/1_MLP", "tokens": 81000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005124.694748, "task": "level3/1_MLP", "tokens": 82000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005127.655491, "task": "level3/1_MLP", "tokens": 83000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005130.879103, "task": "level3/1_MLP", "tokens": 84000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005134.48022, "task": "level3/1_MLP", "tokens": 85000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005138.668922, "task": "level3/1_MLP", "tokens": 86000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005143.243216, "task": "level3/1_MLP", "tokens": 87000, "type": "main_progress"}
+{"iteration": 18, "t": 1794005147.531544, "task": "level3/1_MLP", "tokens": 88000, "type": "main_progress"}
+{"content_tokens": 10537, "finish_reason": "stop", "iteration": 18, "ok": true, "reasoning_tokens": 88387, "seconds": 497.618, "t": 1794005181.22667, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 18, "kind": "build", "label": "level3/1_MLP/i018-main/build", "t": 1794005181.24875, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i018-main/build", "slot": "builder:cpu#0", "t": 1794005181.248883, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i018-main/build", "outcome": "done", "seconds": 2.338, "slot": "builder:cpu#0", "t": 1794005183.586944, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 18, "kind": "validate", "label": "level3/1_MLP/i018-main/validate", "t": 1794005183.594249, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i018-main/validate", "slot": "validator:2#0", "t": 1794005183.59431, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i018-main/validate", "outcome": "done", "seconds": 35.25, "slot": "validator:2#0", "t": 1794005218.84483, "task": "level3/1_MLP", "type": "job_finished"}
+{"kernel": "i018-main", "status": "cuda_error", "t": 1794005218.853081, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 18, "selected": null, "t": 1794005218.853289, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"epoch": 19, "iteration": 19, "t": 1794005218.868601, "task": "level3/1_MLP", "type": "iteration_started"}
+{"iteration": 19, "t": 1794005218.875489, "task": "level3/1_MLP", "type": "main_started"}
+{"iteration": 19, "t": 1794005226.357576, "task": "level3/1_MLP", "tokens": 1000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005232.716259, "task": "level3/1_MLP", "tokens": 2000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005237.88956, "task": "level3/1_MLP", "tokens": 3000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005243.611473, "task": "level3/1_MLP", "tokens": 4000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005249.191544, "task": "level3/1_MLP", "tokens": 5000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005255.024082, "task": "level3/1_MLP", "tokens": 6000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005261.573584, "task": "level3/1_MLP", "tokens": 7000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005267.551412, "task": "level3/1_MLP", "tokens": 8000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005273.033338, "task": "level3/1_MLP", "tokens": 9000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005278.47852, "task": "level3/1_MLP", "tokens": 10000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005283.996419, "task": "level3/1_MLP", "tokens": 11000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005289.969718, "task": "level3/1_MLP", "tokens": 12000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005295.882743, "task": "level3/1_MLP", "tokens": 13000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005300.85893, "task": "level3/1_MLP", "tokens": 14000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005306.678616, "task": "level3/1_MLP", "tokens": 15000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005311.915322, "task": "level3/1_MLP", "tokens": 16000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005317.653214, "task": "level3/1_MLP", "tokens": 17000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005322.939448, "task": "level3/1_MLP", "tokens": 18000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005328.611443, "task": "level3/1_MLP", "tokens": 19000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005334.806646, "task": "level3/1_MLP", "tokens": 20000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005340.06052, "task": "level3/1_MLP", "tokens": 21000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005345.825339, "task": "level3/1_MLP", "tokens": 22000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005351.512882, "task": "level3/1_MLP", "tokens": 23000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005356.943424, "task": "level3/1_MLP", "tokens": 24000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005362.686692, "task": "level3/1_MLP", "tokens": 25000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005368.090325, "task": "level3/1_MLP", "tokens": 26000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005373.669157, "task": "level3/1_MLP", "tokens": 27000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005379.522242, "task": "level3/1_MLP", "tokens": 28000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005385.012827, "task": "level3/1_MLP", "tokens": 29000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005390.360125, "task": "level3/1_MLP", "tokens": 30000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005395.935095, "task": "level3/1_MLP", "tokens": 31000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005401.402622, "task": "level3/1_MLP", "tokens": 32000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005406.706033, "task": "level3/1_MLP", "tokens": 33000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005412.026532, "task": "level3/1_MLP", "tokens": 34000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005417.783828, "task": "level3/1_MLP", "tokens": 35000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005422.030307, "task": "level3/1_MLP", "tokens": 36000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005426.974927, "task": "level3/1_MLP", "tokens": 37000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005432.721278, "task": "level3/1_MLP", "tokens": 38000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005437.934531, "task": "level3/1_MLP", "tokens": 39000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005442.903312, "task": "level3/1_MLP", "tokens": 40000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005448.597841, "task": "level3/1_MLP", "tokens": 41000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005453.944031, "task": "level3/1_MLP", "tokens": 42000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005459.244033, "task": "level3/1_MLP", "tokens": 43000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005464.650469, "task": "level3/1_MLP", "tokens": 44000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005470.201538, "task": "level3/1_MLP", "tokens": 45000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005475.156367, "task": "level3/1_MLP", "tokens": 46000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005478.344416, "task": "level3/1_MLP", "tokens": 47000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005482.333592, "task": "level3/1_MLP", "tokens": 48000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005487.478121, "task": "level3/1_MLP", "tokens": 49000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005492.729751, "task": "level3/1_MLP", "tokens": 50000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005497.678791, "task": "level3/1_MLP", "tokens": 51000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005500.792588, "task": "level3/1_MLP", "tokens": 52000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005505.601489, "task": "level3/1_MLP", "tokens": 53000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005510.720042, "task": "level3/1_MLP", "tokens": 54000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005515.735174, "task": "level3/1_MLP", "tokens": 55000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005518.745522, "task": "level3/1_MLP", "tokens": 56000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005522.944151, "task": "level3/1_MLP", "tokens": 57000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005526.400585, "task": "level3/1_MLP", "tokens": 58000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005529.361261, "task": "level3/1_MLP", "tokens": 59000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005532.357841, "task": "level3/1_MLP", "tokens": 60000, "type": "main_progress"}
+{"iteration": 19, "t": 1794005537.418887, "task": "level3/1_MLP", "tokens": 61000, "type": "main_progress"}
+{"content_tokens": 6887, "finish_reason": "stop", "iteration": 19, "ok": true, "reasoning_tokens": 61377, "seconds": 341.159, "t": 1794005560.037489, "task": "level3/1_MLP", "type": "main_finished"}
+{"epoch": 19, "kind": "build", "label": "level3/1_MLP/i019-main/build", "t": 1794005560.052872, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "build", "label": "level3/1_MLP/i019-main/build", "slot": "builder:cpu#0", "t": 1794005560.052971, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "build", "label": "level3/1_MLP/i019-main/build", "outcome": "done", "seconds": 2.475, "slot": "builder:cpu#0", "t": 1794005562.528511, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 19, "kind": "validate", "label": "level3/1_MLP/i019-main/validate", "t": 1794005562.535127, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "validate", "label": "level3/1_MLP/i019-main/validate", "slot": "validator:2#0", "t": 1794005562.535193, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "validate", "label": "level3/1_MLP/i019-main/validate", "outcome": "done", "seconds": 24.526, "slot": "validator:2#0", "t": 1794005587.060733, "task": "level3/1_MLP", "type": "job_finished"}
+{"epoch": 19, "kind": "benchmark", "label": "level3/1_MLP/i019-main/benchmark", "t": 1794005587.069002, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "benchmark", "label": "level3/1_MLP/i019-main/benchmark", "slot": "profiler:3#0", "t": 1794005587.06906, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kind": "benchmark", "label": "level3/1_MLP/i019-main/benchmark", "outcome": "done", "seconds": 11.102, "slot": "profiler:3#0", "t": 1794005598.170691, "task": "level3/1_MLP", "type": "job_finished"}
+{"iteration": 19, "kernel": "i019-main", "source": "main", "speedup": 9.581009333074023, "t": 1794005598.175778, "task": "level3/1_MLP", "type": "kernel_benchmarked"}
+{"epoch": 19, "kind": "ncu", "label": "level3/1_MLP/i019-main/ncu", "t": 1794005598.177413, "task": "level3/1_MLP", "type": "job_queued"}
+{"concurrency": 1, "kind": "ncu", "label": "level3/1_MLP/i019-main/ncu", "slot": "profiler:3#0", "t": 1794005598.17746, "task": "level3/1_MLP", "type": "job_started", "wait_s": 0.0}
+{"kernel": "i019-main", "status": "success", "t": 1794005598.181427, "task": "level3/1_MLP", "type": "kernel_finished"}
+{"end_reason": "all_finished", "iteration": 19, "selected": "i019-main", "t": 1794005598.18154, "task": "level3/1_MLP", "type": "iteration_finished"}
+{"kind": "ncu", "label": "level3/1_MLP/i019-main/ncu", "outcome": "done", "seconds": 37.156, "slot": "profiler:3#0", "t": 1794005635.333434, "task": "level3/1_MLP", "type": "job_finished"}
+{"degraded": false, "iteration": 19, "kernel": "i019-main", "kernels": 4, "ncu_s": 36.979, "ok": true, "rules": 40, "selection": "nvtx", "status": "success", "t": 1794005635.346404, "task": "level3/1_MLP", "type": "kernel_ncu"}
+{"finished": 1, "iteration": 20, "seconds": 37.145, "t": 1794005635.346519, "task": "level3/1_MLP", "type": "ncu_wait", "unfinished": 0}
+{"pool": {"busy": {"builder": 0, "profiler": 0, "validator": 0}, "devices": [{"capacity": 8, "gpu": "2", "label": "validator:2", "reserved": false, "role": "validator", "running": 0}, {"capacity": 1, "gpu": "3", "label": "profiler:3", "reserved": false, "role": "profiler", "running": 0}, {"capacity": 32, "gpu": null, "label": "builder:cpu", "reserved": false, "role": "builder", "running": 0}], "queued": {"builder": 0, "profiler": 0, "validator": 0}, "slot_busy_s": {"builder:cpu": 53.989, "profiler:3": 792.785, "validator:2": 1143.902}, "slots": {"builder": 32, "profiler": 1, "validator": 8}, "utilization": {"builder": 0.0002, "profiler": 0.0835, "validator": 0.0151}}, "spec": {"generation_s": null, "inflight": 0, "parse_rate": 0.8, "spec_generations": 0}, "stats": {"benchmark": {"count": 15, "exec_s": 11.356760618822857, "pass_rate": 1.0, "wait_s": 0.0}, "build": {"count": 20, "exec_s": 2.4857851927441765, "pass_rate": 1.0, "wait_s": 0.0}, "ncu": {"count": 15, "exec_s": 37.630316891280756, "pass_rate": 1.0, "wait_s": 0.0}, "validate": {"count": 20, "exec_s": 32.28959616359863, "pass_rate": 0.75, "wait_s": 0.0}}, "t": 1794005635.346686, "type": "run_finished"}

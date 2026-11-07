@@ -1,0 +1,5 @@
+task,kernelbench,iterations,e2e_min,time_speedup,profiled_kernels,feedback_ratio,best_speedup,speedup_ratio,profiler_util,validator_util,input_hit_M,input_miss_M,output_M,equivalent_M
+sqmm,level1/1_Square_matrix_multiplication_,20 / 20,117.8 / 115.2,0.98x,164 / 17,9.65x,23.024x / 5.947x,3.87x,52.4% / 6.9%,53.8% / 1.7%,36.08 / 0.09,2.43 / 0.10,4.62 / 1.17,21.61 / 4.80
+rmsnorm,level1/36_RMSNorm_,20 / 20,106.0 / 95.7,0.90x,244 / 19,12.84x,4.579x / 3.941x,1.16x,70.1% / 7.2%,25.4% / 2.1%,15.83 / 0.07,1.73 / 0.08,2.58 / 0.90,12.35 / 3.68
+gelusoftmax,level2/99_Matmul_GELU_Softmax,20 / 20,111.1 / 123.4,1.11x,190 / 13,14.62x,20.668x / 6.244x,3.31x,62.8% / 5.2%,37.9% / 1.7%,28.85 / 0.11,2.33 / 0.14,4.33 / 1.26,20.22 / 5.17
+mlp,level3/1_MLP,20 / 20,128.9 / 157.7,1.22x,155 / 15,10.33x,11.524x / 9.581x,1.20x,74.6% / 8.0%,31.0% / 12.1%,18.68 / 0.12,2.02 / 0.17,3.39 / 1.46,15.95 / 6.02
