@@ -5,7 +5,7 @@ This artifact accompanies *SpecGen: Accelerating Agentic Kernel Optimization wit
 and CudaForge on KernelBench tasks with the same LLM and GPUs and compare them, and our reference results.
 
 Badges requested: **Artifacts Evaluated – Reusable** and **Artifacts Available** (archived at
-DOI: _to be added_).
+[doi.org/10.5281/zenodo.24049999](https://doi.org/10.5281/zenodo.24049999)).
 
 ## Contents
 
