@@ -1,8 +1,11 @@
 # SpecGen: artifact evaluation
 
-This artifact accompanies *SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation*
-(PPoPP 2027, [arXiv:2606.17518](https://arxiv.org/abs/2606.17518)). It contains SpecGen, scripts that run SpecGen
-and CudaForge on KernelBench tasks with the same LLM and GPUs and compare them, and our reference results.
+This artifact accompanies the PPoPP 2027 paper submitted as *Supercharging Agentic Kernel Optimization with
+SpecKerGen*, where the system is named SpecKerGen. The paper supplied with the artifact is its arXiv version,
+*SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation*
+([arXiv:2606.17518](https://arxiv.org/abs/2606.17518)); figure and table numbers refer to it. The artifact
+contains SpecGen, scripts that run SpecGen and CudaForge on KernelBench tasks with the same LLM and GPUs and
+compare them, and our reference results.
 
 Badges requested: **Artifacts Evaluated – Reusable** and **Artifacts Available** (archived at
 [doi.org/10.5281/zenodo.24049999](https://doi.org/10.5281/zenodo.24049999)).
